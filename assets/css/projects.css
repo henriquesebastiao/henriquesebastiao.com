@@ -1,0 +1,24 @@
+.tag-stack {
+    color: #8AB4F8;
+    border-radius: 0.6em;
+    padding: 3px 6px 4px;
+    margin-right: 0.4rem;
+    line-height: 2rem;
+    letter-spacing: 0;
+    border: 1px solid var(--tag-border) !important;
+    box-shadow: 0 0 3px 0 var(--tag-shadow);
+    font-size: smaller;
+}
+
+.version {
+    color: #8AB4F8;
+    border-radius: 0.6em;
+    padding: 2px 4px 2px;
+    margin-right: -.10rem;
+    margin-left: 0.1rem;
+    line-height: 2rem;
+    letter-spacing: 0;
+    border: 1px solid var(--tag-border) !important;
+    box-shadow: 0 0 3px 0 var(--tag-shadow);
+    font-size: 0.7em !important;
+}

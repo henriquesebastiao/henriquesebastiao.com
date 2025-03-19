@@ -1,0 +1,34 @@
+- title: Modernização do Manejo API
+  tags: [fastapi, sqlalchemy, postgres, docker, opentelemetry, pytest]
+  github: https://github.com/henriquesebastiao/modernizacao-manejo-api
+  deploy: https://manejo.henriquesebastiao.com
+  description: >-
+     API assíncrona com observabilidade para gestão de rebanhos bovinos construída com FastAPI.
+
+- title: Poupy
+  tags: [django, html, css, docker, selenium, pytest]
+  github: https://github.com/henriquesebastiao/poupy
+  deploy: https://poupy.henriquesebastiao.com
+  description: >-
+     Aplicação web para gerenciamento de orçamento e gastos pessoais.
+
+- title: Saturn
+  tags: [arduino, c, c++]
+  github: https://github.com/henriquesebastiao/saturn
+  deploy: https://github.com/henriquesebastiao/saturn
+  description: >-
+     Firmware de redteam para M5 Stack Cardputer com chip ESP32S3
+
+- title: Netmikro
+  tags: [python, netmiko, pydantic, pytest]
+  github: https://github.com/henriquesebastiao/netmikro
+  deploy: https://netmikro.henriquesebastiao.com
+  description: >-
+     Uma biblioteca Python para gerenciar roteadores Mikrotik programáticamente.
+
+- title: Timesheet
+  tags: [django, postgres, reportlab]
+  github: https://github.com/henriquesebastiao/poupy
+  deploy: https://poupy.henriquesebastiao.com
+  description: >-
+     Sistema simples feito com Django Admin para armazenar registros e gerar folha de ponto em PDF.
