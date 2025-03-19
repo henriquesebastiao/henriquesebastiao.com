@@ -5,20 +5,18 @@ order: 4
 title: Portifólio
 ---
 
-## Projetos
+Alguns dos projetos que desenvolvi durante esse tempo de estudo em desenvolvimento.
 
-Alguns do projetos que desenvolvi durante esse tempo de estudo em desenvolvimento.
-
-### [Poupy](https://github.com/henriquesebastiao/poupy)
+## [Poupy](https://github.com/henriquesebastiao/poupy){:target="_blank"}
 
 Poupy é um aplicativo web para gerenciamento de orçamento e gastos pessoais, desenvolvido com Django. Ele permite o controle financeiro completo, incluindo a gestão de contas bancárias, receitas, despesas e transferências de saldo entre contas. Com um dashboard intuitivo, o usuário pode visualizar rapidamente um resumo financeiro mensal e manter suas finanças organizadas.
 
-Link do deploy: [https://poupy.henriquesebastiao.com](https://poupy.henriquesebastiao.com/app/login)
+Link do deploy: [https://poupy.henriquesebastiao.com](https://poupy.henriquesebastiao.com/app/login){:target="_blank"}
 
 > Na página de login, clique no botão <kbd>Login as Demo User</kbd> para ver uma demonstração das funcionalidades do app.
 {: .prompt-tip }
 
-#### Funcionalidades
+### Funcionalidades
 
 - **Adição de contas bancárias**: Adicione e gerencie várias contas bancárias.
 - **Registro de receitas e despesas**: Registre suas entradas e saídas de dinheiro para melhor controle.
@@ -39,13 +37,13 @@ Tecnologias e ferramentas usadas no projeto:
 - **Ruff** para formatação de código.
 - **GitHub Actions** para execução de pipelines de CI.
 
-### [Skyport ✨](https://github.com/henriquesebastiao/skyport)
+## [Skyport ✨](https://github.com/henriquesebastiao/skyport){:target="_blank"}
 
 Skyport é um CLI para obter informações de objetos astronômicos diretamente pelo terminal, desenvolvido com Typer e consumindo API pública da NASA. O projeto está sendo desenvolvido com o intuito de aprender mais sobre desenvolvimento de CLIs e consumo de APIs. Tenho muito entusiasmo com este projeto, uma vez que me permite unir duas coisas que gosto: astronomia e o desenvolvimento.
 
-O CLI tem uma documentação completa desenvolvida com MkDocs e hospedada no Read the Docs. Você pode acessá-la [aqui](https://henriquesebastiao.github.io/skyport/).
+O CLI tem uma documentação completa desenvolvida com MkDocs e hospedada no Read the Docs. Você pode acessá-la [aqui](https://henriquesebastiao.github.io/skyport/){:target="_blank"}.
 
-### [Netmikro](https://github.com/henriquesebastiao/netmikro)
+## [Netmikro](https://github.com/henriquesebastiao/netmikro){:target="_blank"}
 
 Netmikro é uma biblioteca simples que fornece uma abstracao para facilitar o gerenciamento roteadores Mikrotik usando Python, simplificando tarefas de configuração e monitoramento. Usando a poderosa biblioteca `Netmiko` para gerar uma conexão SSH com o roteador, a biblioteca Netmikro fornece uma interface mais amigável para realizar tarefas comuns de gerenciamento de roteadores Mikrotik.
 
@@ -71,7 +69,7 @@ MikroTik
 ```
 {: .nolineno }
 
-### [Timesheet](https://github.com/henriquesebastiao/timesheet)
+## [Timesheet](https://github.com/henriquesebastiao/timesheet){:target="_blank"}
 
 Timesheet é um app de folha de ponto desenvolvido com Python, Django e PostgreSQL. Usando o django-admin para interagir com a plicação, o app permite que o usuário registre suas horas trabalhadas e gere o PDF (com `reportlab`) da folha de ponto ao fim do mês.
 
