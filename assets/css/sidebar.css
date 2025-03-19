@@ -1,0 +1,57 @@
+/* X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .sidebar-nav {
+        margin-top: -1.5em;
+    }
+
+    .sidebar-bottom {
+        margin-top: -0.8em;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .sidebar-nav {
+        margin-top: -1.5em;
+    }
+
+    .sidebar-bottom {
+        margin-top: -0.8em;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .sidebar-nav {
+        margin-top: -1.5em;
+    }
+
+    .sidebar-bottom {
+        margin-top: -0.8em;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .sidebar-nav {
+        margin-top: -1.5em;
+    }
+
+    .sidebar-bottom {
+        margin-top: -0.8em;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .sidebar-nav {
+        margin-top: 0;
+    }
+
+    .sidebar-bottom {
+        margin: 0;
+    }
+}

@@ -16,14 +16,16 @@ timezone: America/Cuiaba
 
 title: Henrique Sebastião # the main title
 
-tagline: Desenvolvedor back-end Python, vivendo cada dia com um pouco de café, código e uma boa música. # it will display as the sub-title
+tagline: Desenvolvedor back-end # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Sou desenvolvedor de software e graduando em Ciência da Computação.
+  Sou desenvolvedor Python, com experiência em FastAPI, Django, Docker e bancos de dados SQL. Graduando em Ciência da Computação e entusiasta de Linux e redes, desenvolvo aplicações robustas para solucionar problemas do dia a dia.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
 url: "https://henriquesebastiao.com"
+
+author: henriquesebastiao
 
 github:
   username: henriquesebastiao
@@ -38,6 +40,7 @@ social:
   email: contato@henriquesebastiao.com
   links:
     # The first element serves as the copyright owner's link
+    - https://henriquesebastiao.com
     - https://github.com/henriquesebastiao
     - https://www.linkedin.com/in/henriquesebastiao
     - https://bolha.us/@henriquesebastiao
