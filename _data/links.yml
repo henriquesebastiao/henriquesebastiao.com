@@ -1,0 +1,34 @@
+- title: Site (você está aqui!)
+  icon: fa-solid fa-globe
+  username: "henriquesebastiao.com"
+  link: https://henriquesebastiao.com/
+
+- title: LinkedIn
+  icon: fa-brands fa-linkedin
+  username: "in/henriquesebastiao"
+  link: https://www.linkedin.com/in/henriquesebastiao/
+
+- title: GitHub
+  icon: fa-brands fa-github
+  username: "henriquesebastiao"
+  link: https://github.com/henriquesebastiao/
+
+- title: Mastodon
+  icon: fa-brands fa-mastodon
+  username: "@henriquesebastiao"
+  link: https://bolha.us/@henriquesebastiao
+
+- title: Email
+  icon: fa-solid fa-envelope
+  username: "contato@henriquesebastiao.com"
+  link: mailto:contato@henriquesebastiao.com
+
+- title: Portifólio
+  icon: fa-solid fa-briefcase
+  username: "henriquesebastiao.com/portifolio"
+  link: /portifolio/
+
+- title: Currículo
+  icon: fa-solid fa-file
+  username: "henriquesebastiao.com/curriculo"
+  link: /curriculo/
