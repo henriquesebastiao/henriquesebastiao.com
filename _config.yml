@@ -60,15 +60,15 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: G-BVJ8VX0FC9 # fill in your Google Analytics ID
+    id: G-BVJ8VX0FC9
   goatcounter:
-    id: # fill in your GoatCounter ID
+    id: henriquesebastiao
   umami:
     id: 3a33fd4e-72e9-4dbd-becc-3f0d453ae7cc
     domain: https://umami.henriquesebastiao.com
   matomo:
-    id: # fill in your Matomo ID
-    domain: # fill in your Matomo domain
+    id: 1
+    domain: https://matomo.henriquesebastiao.com
   cloudflare:
     id: 510965fd9db643a0a76796a949c59d44
 
