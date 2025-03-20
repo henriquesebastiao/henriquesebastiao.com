@@ -2,16 +2,16 @@
   icon: "fas fa-envelope"
   noblank: true
 
-- type: mastodon
-  icon: 'fab fa-mastodon'
-  url:  'https://bolha.us/@henriquesebastiao'
-
 - type: linkedin
   icon: 'fab fa-linkedin'
   url:  'https://www.linkedin.com/in/henriquesebastiao/'
 
 - type: github
   icon: "fab fa-github"
+
+- type: mastodon
+  icon: 'fab fa-mastodon'
+  url:  'https://bolha.us/@henriquesebastiao'
 
 - type: rss
   icon: "fas fa-rss"
