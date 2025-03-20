@@ -1,7 +1,9 @@
 name: Build and Push Docker Image
 
 on:
-  push:
+  workflow_run:
+    workflows: ["Build and Deploy"]
+    types: [completed]
     branches:
       - 'main'
 
