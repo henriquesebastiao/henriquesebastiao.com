@@ -22,3 +22,21 @@
     box-shadow: 0 0 3px 0 var(--tag-shadow);
     font-size: 0.7em !important;
 }
+
+.badge-stack {
+    display: none;
+}
+
+.card-body {
+    margin-top: -1em;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .card-body {
+        margin-top: 0em;
+    }
+    .badge-stack {
+        display: flex !important;
+    }
+}
