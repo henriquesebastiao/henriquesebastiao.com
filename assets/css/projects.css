@@ -38,5 +38,6 @@
     }
     .badge-stack {
         display: flex !important;
+        margin-top: 3px;
     }
 }
