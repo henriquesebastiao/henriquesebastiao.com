@@ -213,6 +213,9 @@ exclude:
   - purgecss.js
   - rollup.config.js
   - "package*.json"
+  - Makefile
+  - Dockerfile
+  - docker-compose.yml
 
 jekyll-archives:
   enabled: [categories, tags]
