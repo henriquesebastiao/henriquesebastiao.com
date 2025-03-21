@@ -4,6 +4,8 @@ author: henriquesebastiao
 date: 2024-01-18 11:24:00 -0400
 categories: [Desenvolvimento, Python]
 tags: [programacao, desenvolvimento, python]
+published: false
+image: /assets/img/preview-image-posts/2024/2024-01-18.png
 ---
 
 Um guia de ferramentas que sempre uso em meus projetos pessoais Python para organizar o código e mais alguns truques.

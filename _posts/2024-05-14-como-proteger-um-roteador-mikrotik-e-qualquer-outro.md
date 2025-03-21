@@ -5,6 +5,7 @@ author: henriquesebastiao
 date: 2024-05-16 17:00:00 -0400
 categories: [Redes, Mikrotik]
 tags: [mikrotik, segurança, redes, firewall]
+image: /assets/img/preview-image-posts/2024/2024-05-16.png
 ---
 
 Desde o ano de 2021 tenho trabalhado predominantemente como técnico de redes, eu realmente sou o cara de campo do suporte técnico. Nesse meio tempo eu nunca precisei de fato aprender a configurar roteadores Mikrotik, mas como eu acabei tendo interesse e posteriormente ingressando em um curso superior de tecnologia, eu meio que entrei nesse mundo por entuasiasmo mesmo.
