@@ -213,7 +213,7 @@ exclude:
   - purgecss.js
   - rollup.config.js
   - "package*.json"
-  - Makefile
+  - justfile
   - Dockerfile
   - docker-compose.yml
 
