@@ -1,7 +1,7 @@
 .git/
 _site/
 .jekyll-cache/
-tools/
+scripts/
 .gitattributes
 .gitignore
 .gitmodules
