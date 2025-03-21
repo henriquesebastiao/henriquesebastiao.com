@@ -1,8 +1,13 @@
 # 📝 Blog pessoal e Portifólio
 
-Este é meu blog pessoal e portifólio, feito com [Jekyll](https://jekyllrb.com/) e o belíssimo tema [Chirpy](https://chirpy.cotes.page/).
+[![Deploy](https://github.com/henriquesebastiao/henriquesebastiao.com/actions/workflows/deploy.yml/badge.svg)](https://github.com/henriquesebastiao/henriquesebastiao.com/actions/workflows/deploy.yml)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fhenriquesebastiao.com%2F)](https://henriquesebastiao.com)
+[![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=Cloudflare&logoColor=white)](https://henriquesebastiao.com/)
 
-A ideia aqui é ter um lugar sob o meu controle, onde eu possa compartilhar meus pensamentos, percepções e devaneios. Já há algum tempo em que venho cogitando a abordagem que mais me agradasse para escrever meus posts, depois de algum tempo teste essa implementação com Jekyll cheguei a conclusão de que vou seguir por esse caminho. Primeiro porque escrever em Markdown me é agradável e simples, mas principalmente porque é portável. Se do dia para a noite o GitHub Pages deixar de existir posso auto-hospedar a página, ou se até mesmo o Jekyll se tornar obsoleto posso facilmente migrar meus arquivos `.md` para outra plataforma.
+A ideia aqui é ter um lugar sob o meu controle, onde eu possa compartilhar meus pensamentos, percepções e devaneios.
+Já há algum tempo em que venho cogitando a abordagem que mais me agradasse para escrever meus posts,
+depois de algum tempo testanddo essa implementação com Jekyll cheguei a conclusão de que vou seguir por esse caminho.
+Primeiro porque escrever em Markdown me é agradável e simples, mas principalmente porque é portável.
 
 ### 🛠️ Construindo
 
