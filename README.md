@@ -9,7 +9,17 @@ Já há algum tempo em que venho cogitando a abordagem que mais me agradasse par
 depois de algum tempo testanddo essa implementação com Jekyll cheguei a conclusão de que vou seguir por esse caminho.
 Primeiro porque escrever em Markdown me é agradável e simples, mas principalmente porque é portável.
 
-### 🛠️ Construindo
+### Jekyll
+
+Este site é construído com [Jekyll](https://jekyllrb.com/) usando o tema [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) como base.
+Fiz algumas customizações no tema, as principais estão listadas abaixo.
+
+#### Front Matter dos posts
+
+- `image` - imagem que será a pré-visualização ao compartilhar URL do post.
+- `post_image` - imagem principal que aparece no início da pastagem e no card do post na página home.
+
+### Construindo
 
 Para instalar as dependências de desenvolvimento, siga os seguintes passos:
 
