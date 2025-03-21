@@ -9,4 +9,4 @@ test:
     ./scripts/test.sh
 
 compress-images:
-    python scripts/compress_image.py assets/img/preview-image-posts/*.png
+    python scripts/compress_image.py assets/img/preview-image-posts/*/*.png
