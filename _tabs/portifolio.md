@@ -51,15 +51,12 @@ Um explo de uso da biblioteca:
 
 ```python
 >>> from netmikro import RouterOS
-
-
 >>> router = RouterOS(
     '192.168.3.3',
     'user',
     'password',
     22,
 )
-
 >>> router.cmd('/system identity print')
 MikroTik
 
