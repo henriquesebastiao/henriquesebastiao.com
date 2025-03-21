@@ -6,7 +6,8 @@ permissions:
   contents: read
 
 jobs:
-  build:
+  test:
+    name: Tests
     runs-on: ubuntu-latest
 
     steps:
