@@ -19,9 +19,6 @@ jobs:
     steps:
       - name: Download site
         uses: actions/download-artifact@v4
-        with:
-          name: site
-          path: ./_site/
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
