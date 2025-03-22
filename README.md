@@ -18,6 +18,8 @@ Fiz algumas customizações no tema, as principais estão listadas abaixo.
 
 - `image` - imagem que será a pré-visualização ao compartilhar URL do post.
 - `post_image` - imagem principal que aparece no início da pastagem e no card do post na página home.
+- `script` (lista) - adiciona arquivos JavaScript customizados ao head da página.
+- `styles` (lista) - adiciona arquivos CSS customizados ao head da página.
 
 ### Construindo
 
