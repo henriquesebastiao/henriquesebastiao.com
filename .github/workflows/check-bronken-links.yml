@@ -27,4 +27,6 @@ jobs:
           poetry config virtualenvs.create false
           poetry install
       - name: Check Bronken Links
-        run: python scripts/check_broken_links.py
+        run: |
+          sleep 300
+          python scripts/check_broken_links.py
