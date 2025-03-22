@@ -2,11 +2,12 @@
 icon: fas fa-info-circle
 order: 6
 title: Sobre Mim
+styles:
+  - https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css
+  - /assets/css/about.css
+scripts:
+  - /assets/js/about.js
 ---
-
-<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-<link rel="stylesheet" type='text/css' href="/assets/css/about.css" />
-<script src="/assets/js/about.js" defer></script>
 
 ## Olá! Eu sou Henrique Sebastião 👋
 
