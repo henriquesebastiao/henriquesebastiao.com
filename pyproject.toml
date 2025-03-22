@@ -1,5 +1,5 @@
 [project]
-name = "henriquesebastiao-com"
+name = "henriquesebastiao"
 version = "0.1.0"
 description = "Site pessoal e Portifólio"
 authors = [
@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [tool.poetry]
-packages = [{include = "henriquesebastiao"}]
+package-mode = false
 
 
 [build-system]
