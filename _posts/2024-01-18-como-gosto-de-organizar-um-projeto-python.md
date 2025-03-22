@@ -6,7 +6,7 @@ date: 2024-01-18 11:24:00 -0400
 categories: [Desenvolvimento, Python]
 tags: [programacao, desenvolvimento, python]
 published: false
-image: /assets/img/preview-image-posts/2024/2024-01-18.png
+image: /8e0d4d90-e1d7-440a-36f2-44efd0205a00/public
 ---
 
 Organizar um projeto Python de forma eficiente é essencial para garantir a coesão, a colaboração e a manutenção do código a longo prazo. Seja para um pequeno script ou uma aplicação completa, adotar boas práticas desde o início pode economizar tempo e evitar dores de cabeça no futuro.

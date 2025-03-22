@@ -94,14 +94,14 @@ theme_mode: [dark]
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-cdn:
+cdn: https://imagedelivery.net/UnzHYuseZjpgJ5VEgCbryw
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/assets/img/avatar.jpg"
+avatar: "/2a687c2f-8fab-4347-3bc0-a3cb04d4bb00/public"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
-social_preview_image: "/assets/img/social-preview-image.png"
+social_preview_image: "/e68eb84b-89e4-4c9c-d805-d71b3ef4dc00/public"
 
 # boolean type, the global switch for TOC in posts.
 toc: true
