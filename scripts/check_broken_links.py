@@ -11,7 +11,9 @@ console = Console()
 client = httpx.Client()
 headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0'}
 
-with open('links/links.txt', 'r', encoding='utf-8') as file:
+file = sys.argv[1]
+
+with open(file, 'r', encoding='utf-8') as file:
     urls = [line.strip() for line in file if line.strip()]
 
 for link in urls:

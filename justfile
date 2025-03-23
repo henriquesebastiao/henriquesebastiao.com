@@ -4,6 +4,7 @@ alias c := clean
 alias b := build
 alias m := minify
 alias l := check-broken-links
+alias i := check-broken-links-images
 
 run:
     ./scripts/run.sh
@@ -21,4 +22,7 @@ minify:
     @minify -r -o _site/ _site/
 
 check-broken-links:
-    @python scripts/check_broken_links.py
+    @python scripts/check_broken_links.py links/links.txt
+
+check-broken-links-images:
+    @python scripts/check_broken_links.py links/images.txt

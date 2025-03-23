@@ -1,4 +1,4 @@
-name: Check Bronken Links
+name: Check Bronken Links Images
 
 on:
   workflow_run:
@@ -7,13 +7,13 @@ on:
     branches:
       - 'main'
   schedule:
-    # Runs every day at 04:00 UTC (00:00 GMT-4)
-    - cron: "0 4 * * *"
+    # Happens every monday at 04:00 UTC (00:00 GMT-4)
+    - cron: "0 4 * * 1"
 
   workflow_dispatch:
 
 jobs:
-  check-bronken-links:
+  check-bronken-links-images:
     runs-on: ubuntu-latest
 
     steps:
@@ -34,8 +34,8 @@ jobs:
         with:
           cf_zone_id: ${{ secrets.CLOUDFLARE_ZONE_ID }}
           cf_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN_BYPASS }}
-      - name: Check Bronken Links
+      - name: Check Bronken Links Images
         env:
           GITHUB_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python scripts/check_broken_links.py links/links.txt
+          python scripts/check_broken_links.py links/images.txt
