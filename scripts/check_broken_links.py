@@ -1,13 +1,13 @@
 import sys
 
-import httpx
+import requests
 
 with open('links.txt', 'r', encoding='utf-8') as file:
     urls = [line.strip() for line in file if line.strip()]
 
 for link in urls:
     try:
-        result = httpx.get(link)
+        result = requests.get(link)
         if not 400 <= result.status_code <= 599:
             print(f'{link} -> {result.status_code}')
         else:
