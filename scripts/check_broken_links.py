@@ -8,13 +8,15 @@ from rich.console import Console
 from rich.pretty import Pretty
 
 console = Console()
+client = httpx.Client()
+headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0'}
 
 with open('links.txt', 'r', encoding='utf-8') as file:
     urls = [line.strip() for line in file if line.strip()]
 
 for link in urls:
     try:
-        result = httpx.get(link)
+        result = client.get(link, headers=headers)
         if not 400 <= result.status_code <= 599:
             console.print(f'{link} -> [bold green]{result.status_code}[/bold green]')
         else:
