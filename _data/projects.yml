@@ -28,7 +28,6 @@
 
 - title: Timesheet
   tags: [django, postgres, reportlab]
-  github: https://github.com/henriquesebastiao/poupy
-  deploy: https://poupy.henriquesebastiao.com
+  github: https://github.com/henriquesebastiao/timesheet
   description: >-
      Sistema simples feito com Django Admin para armazenar registros e gerar folha de ponto em PDF.

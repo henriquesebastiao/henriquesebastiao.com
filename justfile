@@ -1,18 +1,15 @@
 alias r := run
 alias t := test
 alias c := clean
-alias compress := compress-images
 alias b := build
 alias m := minify
+alias l := check-broken-links
 
 run:
     ./scripts/run.sh
 
 test:
     ./scripts/test.sh
-
-compress-images:
-    python scripts/compress_image.py assets/img/preview-image-posts/*/*.png
 
 clean:
     @rm -rf _site/ .jekyll-cache/
@@ -22,3 +19,6 @@ build:
 
 minify:
     @minify -r -o _site/ _site/
+
+check-broken-links:
+    @python scripts/check_broken_links.py
