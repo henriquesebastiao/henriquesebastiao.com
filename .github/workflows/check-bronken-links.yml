@@ -27,6 +27,7 @@ jobs:
           poetry config virtualenvs.create false
           poetry install
       - name: Check Bronken Links
+        env:
+          GITHUB_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          sleep 300
           python scripts/check_broken_links.py
