@@ -1,15 +1,14 @@
 import sys
-import ssl
-import certifi
 from pprint import pprint
 
 import httpx
 from rich.console import Console
-from rich.pretty import Pretty
 
 console = Console()
 client = httpx.Client()
-headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0'}
+headers = {
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0'
+}
 
 file = sys.argv[1]
 
@@ -20,9 +19,13 @@ for link in urls:
     try:
         result = client.get(link, headers=headers)
         if not 400 <= result.status_code <= 599:
-            console.print(f'{link} -> [bold green]{result.status_code}[/bold green]')
+            console.print(
+                f'{link} -> [bold green]{result.status_code}[/bold green]'
+            )
         else:
-            console.print(f'\n[bold red]ERRO[/bold red] -> Falha na URL {link} -> {result.status_code}')
+            console.print(
+                f'\n[bold red]ERRO[/bold red] -> Falha na URL {link} -> {result.status_code}'
+            )
             print('\nRESPONSE:')
             print('Headers:')
             pprint(vars(result.headers))

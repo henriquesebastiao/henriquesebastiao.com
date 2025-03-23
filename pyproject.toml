@@ -17,6 +17,23 @@ dependencies = [
 package-mode = false
 
 
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.11.2"
+
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.lint]
+preview = true
+select = ['I', 'F', 'E', 'W', 'PL', 'PT']
+
+[tool.ruff.format]
+preview = true
+quote-style = 'single'
+
+[tool.ruff.lint.per-file-ignores]
+"check_broken_links.py" = ["E501", "PLR2004"]

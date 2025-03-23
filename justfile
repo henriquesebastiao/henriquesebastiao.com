@@ -26,3 +26,9 @@ check-broken-links:
 
 check-broken-links-images:
     @python scripts/check_broken_links.py links/images.txt
+
+format:
+    ruff format .; ruff check . --fix
+
+lint:
+    ruff check .; ruff check . --diff
