@@ -1,13 +1,19 @@
 import sys
+import ssl
+import certifi
 
-import requests
+import httpx
 
 with open('links.txt', 'r', encoding='utf-8') as file:
     urls = [line.strip() for line in file if line.strip()]
 
+context = ssl.create_default_context()
+context.load_verify_locations(certifi.where()) 
+client = httpx.Client(verify=context) 
+
 for link in urls:
     try:
-        result = requests.get(link)
+        result = client.get(link)
         if not 400 <= result.status_code <= 599:
             print(f'{link} -> {result.status_code}')
         else:
