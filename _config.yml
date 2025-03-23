@@ -117,14 +117,14 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: "henriquesebastiao/henriquesebastiao.github.io"
-    repo_id: "R_kgDOK_u0ZA"
-    category: "Announcements"
-    category_id: "DIC_kwDOK_u0ZM4CcJAp"
+    repo: "henriquesebastiao/henriquesebastiao.com"
+    repo_id: "R_kgDOOMK3Bw"
+    category: "General"
+    category_id: "DIC_kwDOOMK3B84CoYEQ"
     mapping: "pathname" # optional, default to 'pathname'
     strict: # optional, default to '0'
-    input_position: "top" # optional, default to 'bottom'
-    lang: "pt" # optional, default to the value of `site.lang`
+    # input_position: "top" # optional, default to 'bottom'
+    # lang: "pt" # optional, default to the value of `site.lang`
     reactions_enabled: "1" # optional, default to the value of `1`
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
