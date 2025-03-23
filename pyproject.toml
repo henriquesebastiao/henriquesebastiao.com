@@ -10,7 +10,8 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "httpx (>=0.28.1,<0.29.0)",
-    "rich (>=13.9.4,<14.0.0)"
+    "rich (>=13.9.4,<14.0.0)",
+    "python-decouple (>=3.8,<4.0)"
 ]
 
 [tool.poetry]
