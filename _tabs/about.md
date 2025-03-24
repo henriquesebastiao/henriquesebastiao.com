@@ -35,10 +35,10 @@ pela minha experiência profissional como técnico de redes e o uso de sistemas 
 
 Quanto a parte técnica, você pode encontrar mais sobre mim nos links abaixo:
 
-[Linkedin](https://www.linkedin.com/in/henriquesebastiao/){:target="_blank"}, [GitHub](https://github.com/henriquesebastiao){:target="_blank"}, [Portifólio](/portifolio/) e [Currículo](/curriculo/){:target="_blank"}.
+[Linkedin](/linkedin/){:target="_blank"}, [GitHub](/github/){:target="_blank"}, [Portifólio](/portifolio/) e [Currículo](/curriculo/){:target="_blank"}.
 
 
-Nas redes sociais me faço presente apenas no [Mastodon](https://bolha.us/@henriquesebastiao){:target="_blank"}.
+Nas redes sociais me faço presente apenas no [Mastodon](/mastodon/){:target="_blank"}.
 
 Alternativamente você pode encontrar todos os meus links [aqui](/links/).
 

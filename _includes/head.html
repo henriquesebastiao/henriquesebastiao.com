@@ -116,6 +116,11 @@
             <script src="{{ script_link }}" defer></script>
         {% endfor %}
     {% endif %}
+
+    <!-- Custom head -->
+    {% if page.redirect_to_link %}
+      <meta http-equiv="refresh" content="0; url={{ page.redirect_to_link }}" />
+    {% endif %}
   
     {% include js-selector.html lang=lang %}
   

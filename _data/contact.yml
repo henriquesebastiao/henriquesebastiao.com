@@ -4,14 +4,14 @@
 
 - type: linkedin
   icon: 'fab fa-linkedin'
-  url:  'https://www.linkedin.com/in/henriquesebastiao/'
+  url:  '/linkedin/'
 
 - type: github
   icon: "fab fa-github"
 
 - type: mastodon
   icon: 'fab fa-mastodon'
-  url:  'https://bolha.us/@henriquesebastiao'
+  url:  '/mastodon/'
 
 - type: rss
   icon: "fas fa-rss"

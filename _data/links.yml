@@ -1,22 +1,22 @@
 - title: Site (você está aqui!)
   icon: fa-solid fa-globe
   username: "henriquesebastiao.com"
-  link: https://henriquesebastiao.com/
+  link: /
 
 - title: LinkedIn
   icon: fa-brands fa-linkedin
   username: "in/henriquesebastiao"
-  link: https://www.linkedin.com/in/henriquesebastiao/
+  link: /linkedin/
 
 - title: GitHub
   icon: fa-brands fa-github
   username: "henriquesebastiao"
-  link: https://github.com/henriquesebastiao/
+  link: /github/
 
 - title: Mastodon
   icon: fa-brands fa-mastodon
   username: "@henriquesebastiao"
-  link: https://bolha.us/@henriquesebastiao
+  link: /mastodon/
 
 - title: Email
   icon: fa-solid fa-envelope

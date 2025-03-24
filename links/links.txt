@@ -40,3 +40,12 @@ https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css
 https://www.python.org/
 https://fastapi.tiangolo.com/
 https://www.djangoproject.com/
+https://henriquesebastiao.com/manejo/
+https://henriquesebastiao.com/netmikro/
+https://henriquesebastiao.com/poupy/
+https://henriquesebastiao.com/saturn/
+https://henriquesebastiao.com/skyport/
+https://henriquesebastiao.com/timesheet/
+https://henriquesebastiao.com/github/
+https://henriquesebastiao.com/linkedin/
+https://henriquesebastiao.com/mastodon/
