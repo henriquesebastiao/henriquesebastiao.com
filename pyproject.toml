@@ -1,7 +1,7 @@
 [project]
 name = "henriquesebastiao"
 version = "0.1.0"
-description = "Site pessoal e Portifólio"
+description = "Site pessoal e Portfólio"
 authors = [
     {name = "Henrique Sebastião",email = "contato@henriquesebastiao.com"}
 ]

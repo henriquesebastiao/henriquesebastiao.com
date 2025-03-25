@@ -1,4 +1,4 @@
-# 📝 Blog pessoal e Portifólio
+# 📝 Blog pessoal e Portfólio
 
 [![Deploy](https://github.com/henriquesebastiao/henriquesebastiao.com/actions/workflows/deploy.yml/badge.svg)](https://github.com/henriquesebastiao/henriquesebastiao.com/actions/workflows/deploy.yml)
 [![Check Bronken Links](https://github.com/henriquesebastiao/henriquesebastiao.com/actions/workflows/check-bronken-links.yml/badge.svg)](https://github.com/henriquesebastiao/henriquesebastiao.com/actions/workflows/check-bronken-links.yml)

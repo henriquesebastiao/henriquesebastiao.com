@@ -23,10 +23,10 @@
   username: "contato@henriquesebastiao.com"
   link: mailto:contato@henriquesebastiao.com
 
-- title: Portifólio
+- title: Portfólio
   icon: fa-solid fa-briefcase
-  username: "henriquesebastiao.com/portifolio"
-  link: /portifolio/
+  username: "henriquesebastiao.com/portfolio"
+  link: /portfolio/
 
 - title: Currículo
   icon: fa-solid fa-file
