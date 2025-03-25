@@ -34,13 +34,17 @@
               <i class="fa-fw {{ tab.icon }}"></i>
               {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
   
-              <span>{{ site.data.locales[include.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
+              <span>{{ tab.title | upcase }}</span>
             </a>
           </li>
           <!-- .nav-item -->
         {% endfor %}
       </ul>
     </nav>
+
+    <div class="nav-link lang-selector-wrapper w-100">
+      {%- include lang-selector.html -%}
+    </div>
   
     <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
       {% unless site.theme_mode %}

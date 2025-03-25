@@ -3,31 +3,31 @@
   github: /manejo/
   deploy: https://manejo.henriquesebastiao.com
   description: >-
-     API assíncrona com observabilidade para gestão de rebanhos bovinos construída com FastAPI.
+     Asynchronous API with observability for cattle herd management built with FastAPI.
 
 - title: Poupy
   tags: [django, html, css, docker, selenium, pytest]
   github: /poupy/
   deploy: https://poupy.henriquesebastiao.com
   description: >-
-     Aplicação web para gerenciamento de orçamento e gastos pessoais.
+     Web application for managing personal budget and expenses.
 
 - title: Saturn
   tags: [arduino, c, c++]
   github: /saturn/
   deploy: https://github.com/henriquesebastiao/saturn
   description: >-
-     Firmware de redteam para M5 Stack Cardputer com chip ESP32S3
+     Redteam firmware for M5 Stack Cardputer with ESP32S3 Chip
 
 - title: Netmikro
   tags: [python, netmiko, pydantic, pytest]
   github: /netmikro/
   deploy: https://netmikro.henriquesebastiao.com
   description: >-
-     Uma biblioteca Python para gerenciar roteadores Mikrotik programáticamente.
+     A Python library for managing Mikrotik routers programmatically.
 
 - title: Timesheet
   tags: [django, postgres, reportlab]
   github: /timesheet/
   description: >-
-     Sistema simples feito com Django Admin para armazenar registros e gerar folha de ponto em PDF.
+     Simple system made with Django Admin to store records and generate timesheets in PDF.

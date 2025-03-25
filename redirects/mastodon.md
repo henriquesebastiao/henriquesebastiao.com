@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Redirecionando...
+title: Redirecting...
 permalink: /mastodon/
 redirect_to_link: "https://bolha.us/@henriquesebastiao"
 ---
 
-Estou te eviando para a página de destino ⚡
+I'm sending you to the landing page ⚡

@@ -1,7 +1,7 @@
 ---
 icon: fas fa-info-circle
-order: 6
-title: Sobre Mim
+order: 5
+title: Sobre
 styles:
   - https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css
   - /assets/css/about.css
