@@ -41,12 +41,6 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: 'stable'
-      
-      - name: Install minify
-        run: go install github.com/tdewolff/minify/v2/cmd/minify@latest
-      
-      - name: Minify files
-        run: minify -r -o _site/ _site/
   
       - name: Upload site artifact
         uses: actions/upload-artifact@v4

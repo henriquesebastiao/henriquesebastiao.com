@@ -83,11 +83,11 @@
     <link rel="stylesheet" href="{{ site.data.origin[type].fontawesome.css | relative_url }}">
 
     <!-- Custom styles -->
-    <link rel="stylesheet" type='text/css' href="{{ '/assets/css/sidebar.css' | relative_url }}" />
-    
+    <link rel="stylesheet" href="{{ '/assets/css/sidebar.css' | relative_url }}" />
+
     {% if page.styles %}
         {% for style_link in page.styles %}
-            <link rel="stylesheet" type='text/css' href="{{ style_link }}">
+            <link rel="stylesheet" href="{{ style_link }}">
         {% endfor %}
     {% endif %}
   
