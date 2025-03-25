@@ -156,7 +156,7 @@ plugins:
 # Polyglot Settings
 languages: ["pt-BR", "en"]
 default_lang: "pt-BR"
-exclude_from_localization: ["assets", ".github", ".venv", ".wrangler", "scripts"]
+exclude_from_localization: ["assets", ".github", ".venv", ".wrangler", "scripts", "pyproject.toml", "poetry.lock", "links"]
 parallel_localization: false
 lang_from_path: true
 
@@ -226,6 +226,9 @@ exclude:
   - justfile
   - Dockerfile
   - docker-compose.yml
+  - pyproject.toml
+  - poetry.lock
+  - links
 
 jekyll-archives:
   enabled: [categories, tags]
