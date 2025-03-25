@@ -3,8 +3,8 @@ title: Como proteger um roteador Mikrotik (e qualquer outro)
 description: Técnicas e boas práticas para proteger seu roteador RouterOS contra ataques maliciosos.
 author: henriquesebastiao
 date: 2024-05-16 17:00:00 -0400
-categories: [Redes, Mikrotik]
-tags: [mikrotik, segurança, redes, firewall]
+categories: [Network, Mikrotik]
+tags: [mikrotik, security, network, firewall]
 image: /480a268a-49e3-458c-df9f-748528b4a100/public
 ---
 
@@ -32,7 +32,7 @@ O erro mais comum e sem sombra de dúvidas, o mais problemático, são os rotead
 - Usuário: `admin`
 - Senha: em branco
 
-Caso seu roteador esteja recebendo um IP público (também chamado de IP válido por alguns profissionais de redes) ou mesmo que esteja por trás de um NAT que não tem um firewall para te proteger, provavelmente esse vai ser o seu primeiro problema. Todo o dispositivo que é acessível apartir da internet é alvo constante de tentativas de acesso indevido realizadas por agentes maliciosos espalhados pelo mundo inteiro, estes tentam invadir seu dispositivo em busca de transforma-lo em um bot para ataques a terceiros. Você não necessariamente pode ser o alvo, mas caso seu dispositivo seja invadido, ele será usado como marionete integrando uma rede (chamada de botnet) com outros milhares de dispositivos IoT infectados, afim de realizar ataques [DDoS](https://www.cloudflare.com/pt-br/learning/ddos/what-is-a-ddos-attack/) e o que mais passar pela mente do atacante. Um caso famoso é o botnet [Mirai](https://www.cloudflare.com/pt-br/learning/ddos/glossary/mirai-botnet/).
+Caso seu roteador esteja recebendo um IP público (também chamado de IP válido por alguns profissionais de redes) ou mesmo que esteja por trás de um NAT que não tem um firewall para te proteger, provavelmente esse vai ser o seu primeiro problema. Todo o dispositivo que é acessível apartir da internet é alvo constante de tentativas de acesso indevido realizadas por agentes maliciosos espalhados pelo mundo inteiro, estes tentam invadir seu dispositivo em busca de transforma-lo em um bot para ataques a terceiros. Você não necessariamente pode ser o alvo, mas caso seu dispositivo seja invadido, ele será usado como marionete integrando uma rede (chamada de botnet) com outros milhares de dispositivos IoT infectados, afim de realizar ataques [DDoS](https://www.cloudflare.com/pt-br/learning/ddos/what-is-a-ddos-attack/){:target="_blank"} e o que mais passar pela mente do atacante. Um caso famoso é o botnet [Mirai](https://www.cloudflare.com/pt-br/learning/ddos/glossary/mirai-botnet/){:target="_blank"}.
 
 Portanto, certifique-se de configurar um usuário com uma senha suficientemente segura para seu roteador, com letras maiúsculas, minúsculas, números e caracteres especiais.
 
@@ -46,14 +46,14 @@ Ok, partindo do ponto de que sabemos que não é nada profissional deixarmos log
 
 No mundo da programação já ouvi pessoas falando, “Ah, eu uso Python 3.7 porque é mais estável…”. O problema é que esse argumento cai por terra tão rápido quanto é dito, se tal versão fosse estável e confiável não haveriam laçamento de novas versões apenas com correções de bugs.
 
-O mesmo vale para roteradores. A maioria das profissionais de redes ainda usam até hoje versões relativamente antigas de firmwares, uma rápida pesquisa por dispositivos Mikrotik no [Shodan.io](https://www.shodan.io/) mostra isso:
+O mesmo vale para roteradores. A maioria das profissionais de redes ainda usam até hoje versões relativamente antigas de firmwares, uma rápida pesquisa por dispositivos Mikrotik no [Shodan.io](https://www.shodan.io/){:target="_blank"} mostra isso:
 
 Aqui vemos a versão 6.48.6 sendo usada pela maioria dos dispositivos Mikrotik visíveis na internet, tal versão foi anunciada no dia 12 de dezembro de 2021, e atualmente na data em que este artigo foi escrito, a versão mais recente v6 do RouterOS é a 6.49.13 (long-term). O problema é que a própria versão 6.48.6 possui vulnerabilidade conhecidas, como descrito a seguir.
 
-> [CVE-2023-30799](https://nvd.nist.gov/vuln/detail/CVE-2023-30799) - MikroTik RouterOS antes de 6.49.7 (stable) e até 6.48.6 (long-term) são vulneráveis a um problema de escalonamento de privilégios. Um invasor remoto e autenticado pode escalar privilégios de administrador para superadministrador no Winbox ou na interface HTTP. O invasor pode abusar dessa vulnerabilidade para executar código arbitrário no sistema.
+> [CVE-2023-30799](https://nvd.nist.gov/vuln/detail/CVE-2023-30799){:target="_blank"} - MikroTik RouterOS antes de 6.49.7 (stable) e até 6.48.6 (long-term) são vulneráveis a um problema de escalonamento de privilégios. Um invasor remoto e autenticado pode escalar privilégios de administrador para superadministrador no Winbox ou na interface HTTP. O invasor pode abusar dessa vulnerabilidade para executar código arbitrário no sistema.
 {: .prompt-danger }
 
-Outra vulnerabilidade que ficou bastante conhecida nos roteadores Mikrotik foi  a [CVE-2018-14847](https://nvd.nist.gov/vuln/detail/CVE-2018-14847), na qual era possível por meio de um simples script obter os usuários e senhas de um roteador até a versão 6.42. Veja um exemplo de ataque feito em laboratório que se aproveita dessa falha:
+Outra vulnerabilidade que ficou bastante conhecida nos roteadores Mikrotik foi  a [CVE-2018-14847](https://nvd.nist.gov/vuln/detail/CVE-2018-14847){:target="_blank"}, na qual era possível por meio de um simples script obter os usuários e senhas de um roteador até a versão 6.42. Veja um exemplo de ataque feito em laboratório que se aproveita dessa falha:
 
 {% include embed/youtube.html id='fMki-cDjb64' %}
 
@@ -68,7 +68,7 @@ Mesmo que você não seja a pessoa mais atualizada nas notícias, certifique-se 
 
 Outra boa prática de segurança é alterar as portas padrão do roteador. Isso pode ajudar a prevenir ataques automatizados que visam portas conhecidas. Além disso, é importante desativar qualquer serviço ou porta que não esteja sendo utilizada, pois isso pode reduzir a exposição do seu roteador a possíveis vulnerabilidades.
 
-Potas conhecidas como SSH, HTTP e WINBOX expostas na internet, são frequentemente alvo de tentativas de login por [bruteforce](https://en.wikipedia.org/wiki/Brute-force_attack), a baixo estão listada as portas default usadas pelo Mikrotik e seus respectivos serviços:
+Potas conhecidas como SSH, HTTP e WINBOX expostas na internet, são frequentemente alvo de tentativas de login por [bruteforce](https://en.wikipedia.org/wiki/Brute-force_attack){:target="_blank"}, a baixo estão listada as portas default usadas pelo Mikrotik e seus respectivos serviços:
 
 - api: 8728
 - api-ssl: 8729
@@ -90,7 +90,7 @@ Para alterar a porta default de um serviço, você pode utilizar o comando abaix
 
 No exemplo acima, estamos alterando a porta do serviço SSH para 2222. 
 
-Agentes mal intencionados podem usar softwares com [Nmap](https://nmap.org/) e [Hydra](https://github.com/vanhauser-thc/thc-hydra) para realizar uma varredura em seu roteador e tentar quebrar as senhas por força bruta. Portanto, é essencial alterar as portas padrão para dificultar o acesso não autorizado ao seu dispositivo.
+Agentes mal intencionados podem usar softwares com [Nmap](https://nmap.org/){:target="_blank"} e [Hydra](https://github.com/vanhauser-thc/thc-hydra){:target="_blank"} para realizar uma varredura em seu roteador e tentar quebrar as senhas por força bruta. Portanto, é essencial alterar as portas padrão para dificultar o acesso não autorizado ao seu dispositivo.
 
 ## Mãos na massa
 
@@ -161,7 +161,7 @@ add action=accept chain=input comment="Libera Webfig (HTTP)" dst-port=80 protoco
 
 Agora vamos adicionar todas as regras que nosso roteador precisa para funcionar num cenário em que eles está recebendo um link de internet via DHCP client pela interface `ether1` e disponibiliza um DHCP server para os dispositivos conectados na rede LAN.
 
-> Verifique se você liberou a entrada de todos os os protocolos de que precisa antes de aplicar qual quer regra DROP! Segue o link da documentação oficial da Mikrotik que lista os protocolos e suas respectivas portas de serviço: [https://help.mikrotik.com/docs/display/ROS/Services](https://help.mikrotik.com/docs/display/ROS/Services)
+> Verifique se você liberou a entrada de todos os os protocolos de que precisa antes de aplicar qual quer regra DROP! Segue o link da documentação oficial da Mikrotik que lista os protocolos e suas respectivas portas de serviço: [https://help.mikrotik.com/docs/display/ROS/Services](https://help.mikrotik.com/docs/display/ROS/Services){:target="_blank"}
 {: .prompt-warning }
 
 Adicionando as regras necessárias:

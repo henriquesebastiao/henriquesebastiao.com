@@ -1,0 +1,29 @@
+---
+layout: content
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{% for lang in site.languages %}
+    {% for node in site.pages %}
+        {% comment %}<!-- verificação muito preguiçosa para ver se a página está na lista de exclusão - isso significa que as páginas excluídas não estarão no sitemap de forma alguma, escreva exceções conforme necessário -->{% endcomment %}
+        {% unless site.exclude_from_localization contains node.path %}
+            {% comment %}<!-- assumindo que se não houver layout atribuído, então não inclua a página no sitemap, você pode querer mudar isso -->{% endcomment %}
+            {% if node.layout %}
+                <url>
+                    <loc>{% if lang == site.default_lang %}{{ node.url | absolute_url }}{% else %}{{ node.url | prepend: lang | prepend: '/' | absolute_url }}{% endif %}</loc>
+                    {% if node.last_modified_at and node.last_modified_at != node.date %}<lastmod>{{ node.last_modified_at | date: '%Y-%m-%dT%H:%M:%S%:z' }}</lastmod>{% elsif node.date %}<lastmod>{{ node.date | date: '%Y-%m-%dT%H:%M:%S%:z' }}</lastmod>{% endif %}
+                </url>
+            {% endif %}
+        {% endunless %}
+    {% endfor %}
+    {% comment %}<!-- Isso percorre todas as coleções do site, incluindo posts -->{% endcomment %}
+    {% for collection in site.collections %}
+        {% for node in site[collection.label] %}
+            <url>
+                <loc>{% if lang == site.default_lang %}{{ node.url | absolute_url }}{% else %}{{ node.url | prepend: lang | prepend: '/' | absolute_url }}{% endif %}</loc>
+                {% if node.last_modified_at and node.last_modified_at != node.date %}<lastmod>{{ node.last_modified_at | date: '%Y-%m-%dT%H:%M:%S%:z' }}</lastmod>{% elsif node.date %}<lastmod>{{ node.date | date: '%Y-%m-%dT%H:%M:%S%:z' }}</lastmod>{% endif %}
+            </url>
+        {% endfor %}
+    {% endfor %}
+{% endfor %}
+</urlset>

@@ -3,50 +3,74 @@ No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+    .profile-wrapper {
+        margin-top: 2rem !important;
+    }
+
     .sidebar-nav {
         margin-top: -1.5em;
+        margin-bottom: -2em !important;
     }
 
     .sidebar-bottom {
-        margin-top: -0.8em;
+        margin-top: 1em;
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    .profile-wrapper {
+        margin-top: 2rem !important;
+    }
+
     .sidebar-nav {
         margin-top: -1.5em;
+        margin-bottom: -1.5em;
     }
 
     .sidebar-bottom {
-        margin-top: -0.8em;
+        margin-top: 1em;
     }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    .profile-wrapper {
+        margin-top: 0rem;
+    }
+
     .sidebar-nav {
         margin-top: -1.5em;
+        margin-bottom: -1.5em;
     }
 
     .sidebar-bottom {
-        margin-top: -0.8em;
+        margin-top: 1em;
     }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    .profile-wrapper {
+        margin-top: 0rem;
+    }
+
     .sidebar-nav {
         margin-top: -1.5em;
+        margin-bottom: -1.5em;
     }
 
     .sidebar-bottom {
-        margin-top: -0.8em;
+        margin-top: 1em;
     }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
+    .profile-wrapper {
+        margin-top: 3.5rem !important;
+    }
+
     .sidebar-nav {
         margin-top: 0;
     }

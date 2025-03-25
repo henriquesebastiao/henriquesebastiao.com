@@ -17,13 +17,13 @@ Se você também gostar dessas dicas, me sentirei honrado em poder te ajudar.
 
 ## Ferramentas de desenvolvimento
 
-- [Pytest](https://docs.pytest.org/), para testar meus projetos;
-- [Coverage](https://coverage.readthedocs.io/), para saber se esqueci de testar algo;
-- [Taskipy](https://github.com/taskipy/taskipy), uma forma de encurtar comandos enormes;
-- [Ruff](https://docs.astral.sh/ruff/), para seguir a PEP8 e formatar o código;
-- [Bandit](https://bandit.readthedocs.io/), para verificar vulnerabilidades no código.
-- [Radon](https://radon.readthedocs.io/), para verificar se não estou fazendo algo muito esquisito 😅.
-- [Mypy](https://mypy.readthedocs.io/), um verificador de tipos run time.
+- [Pytest](https://docs.pytest.org/){:target="_blank"}, para testar meus projetos;
+- [Coverage](https://coverage.readthedocs.io/){:target="_blank"}, para saber se esqueci de testar algo;
+- [Taskipy](https://github.com/taskipy/taskipy){:target="_blank"}, uma forma de encurtar comandos enormes;
+- [Ruff](https://docs.astral.sh/ruff/){:target="_blank"}, para seguir a PEP8 e formatar o código;
+- [Bandit](https://bandit.readthedocs.io/){:target="_blank"}, para verificar vulnerabilidades no código.
+- [Radon](https://radon.readthedocs.io/){:target="_blank"}, para verificar se não estou fazendo algo muito esquisito 😅.
+- [Mypy](https://mypy.readthedocs.io/){:target="_blank"}, um verificador de tipos run time.
 
 ```terminal
 poetry add --group dev taskipy ruff "bandit[toml]" "radon[toml]" mypy pytest pytest-cov coverage-badge setuptols
@@ -31,9 +31,9 @@ poetry add --group dev taskipy ruff "bandit[toml]" "radon[toml]" mypy pytest pyt
 
 ## Ferramentas de documentação
 
-- [Material for MkDocs](https://github.com/squidfunk/mkdocs-material/), um framework para a criação da documentação;
-- [mkdocstrings](https://mkdocstrings.github.io/), uma ferramenta que gera documentação a partir das docstrings no código;
-- [mkdocstrings-python](https://mkdocstrings.github.io/python/), o plugin de suporte python para o mkdocstrings.
+- [Material for MkDocs](https://github.com/squidfunk/mkdocs-material/){:target="_blank"}, um framework para a criação da documentação;
+- [mkdocstrings](https://mkdocstrings.github.io/){:target="_blank"}, uma ferramenta que gera documentação a partir das docstrings no código;
+- [mkdocstrings-python](https://mkdocstrings.github.io/python/){:target="_blank"}, o plugin de suporte python para o mkdocstrings.
 
 ```terminal
 poetry add --group doc mkdocs-material mkdocstrings mkdocstrings-python mkdocs-macros-plugin jinja2 pygments pymdown-extensions mkdocs-git-committers-plugin-2 mkdocs-git-authors-plugin mkdocs-git-revision-date-localized-plugin
@@ -105,7 +105,7 @@ poetry export --with dev --without-hashes --without-urls --output requirements.t
 
 ## Padrões de código
 
-Para docstrings sempre uso o padrão do [Google Docstrings](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html). Me parece muito mais consiso o bonito.
+Para docstrings sempre uso o padrão do [Google Docstrings](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html){:target="_blank"}. Me parece muito mais consiso o bonito.
 
 ## Integração Contínua com GitHub Actions
 
@@ -136,7 +136,7 @@ jobs:
 
 ## Mensagens de commit
 
-Priorizo o uso de mensagens semânticas para os commits. Sempre procuro referências neste [repositório](https://github.com/iuricode/padroes-de-commits) de [Iuri Silva](https://github.com/iuricode).
+Priorizo o uso de mensagens semânticas para os commits. Sempre procuro referências neste [repositório](https://github.com/iuricode/padroes-de-commits){:target="_blank"} de [Iuri Silva](https://github.com/iuricode){:target="_blank"}.
 
 ## Por que não descontrair um pouco?
 

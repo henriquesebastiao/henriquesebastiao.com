@@ -150,6 +150,16 @@ paginate: 10
 # The base URL of your site
 baseurl: ""
 
+plugins:
+  - jekyll-polyglot
+
+# Polyglot Settings
+languages: ["pt-BR", "en"]
+default_lang: "pt-BR"
+exclude_from_localization: ["assets", ".github", ".venv", ".wrangler", "scripts"]
+parallel_localization: false
+lang_from_path: true
+
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
@@ -204,8 +214,8 @@ compress_html:
     envs: [development]
 
 exclude:
-  - "*.gem"
-  - "*.gemspec"
+  # - "*.gem"
+  - jekyll-theme-chirpy.gemspec # - "*.gemspec"
   - docs
   - scripts
   - README.md

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Redirecionando...
+title: Redirecting...
 permalink: /skyport/
 redirect_to_link: "https://github.com/henriquesebastiao/skyport-old"
 ---
 
-Estou te eviando para a página de destino ⚡
+I'm sending you to the landing page ⚡

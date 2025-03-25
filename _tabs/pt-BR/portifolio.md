@@ -1,7 +1,7 @@
 ---
 layout: page
 icon: fas fa-briefcase
-order: 4
+order: 3
 title: Portifólio
 image: /11aa8482-8fee-4a90-c712-67c55f9cca00/public
 ---

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Redirecionando...
+title: Redirecting...
 permalink: /linkedin/
 redirect_to_link: "https://www.linkedin.com/in/henriquesebastiao/"
 ---
 
-Estou te eviando para a página de destino ⚡
+I'm sending you to the landing page ⚡
