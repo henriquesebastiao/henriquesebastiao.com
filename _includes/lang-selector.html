@@ -1,22 +1,133 @@
-<link rel="stylesheet" href="{{ '/assets/css/lang-selector.css' | relative_url }}">
+<style>
+    /**
+ * Estilo do seletor de idioma
+ * 
+ * Define o estilo do dropdown de seleção de idioma localizado na barra lateral.
+ * Suporta o modo escuro do tema e é otimizado para ambientes móveis.
+ */
+
+    /* Contêiner do seletor de idioma */
+    .lang-selector-wrapper {
+        padding: 0.35rem;
+        margin: 0.15rem 0;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+
+    /* Contêiner do dropdown */
+    .lang-dropdown {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+
+        margin-top: -0em;
+    }
+
+    /* Elemento de entrada de seleção */
+    .lang-select {
+        /* Estilo básico */
+        padding: 0.6rem 16px 0.6rem 16px;
+
+        /* Fonte e cor */
+        font-family: Source Sans Pro, sans-serif;
+        font-size: 0.95rem;
+        color: #868686 !important;
+        background-color: var(--sidebar-bg);
+
+        /* Forma e interação */
+        border-width: 1px;
+        border-radius: .75rem;
+        border-color: #313032;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+
+        /* Adição do ícone de seta */
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: right 0.75rem center;
+        background-size: 1rem;
+    }
+
+    /* Estilo dos emojis de bandeira */
+    .lang-select option {
+        font-family: Source Sans Pro, sans-serif;
+        padding: 0.35rem;
+        font-size: 1rem;
+    }
+
+    /* Estado de hover */
+    .lang-select:hover {
+        color: #8AB4F8;
+        background-color: #252525;
+    }
+
+    /* Estado de foco */
+    .lang-select:focus {
+        outline: 1px solid #8AB4F8;
+        outline-offset: 1px;
+        color: var(--sidebar-active);
+    }
+
+    /* Suporte para o navegador Firefox */
+    .lang-select:-moz-focusring {
+        color: transparent;
+        text-shadow: 0 0 0 var(--sidebar-muted);
+    }
+
+    /* Suporte para o navegador IE */
+    .lang-select::-ms-expand {
+        display: none;
+    }
+
+    /* Suporte para modo escuro */
+    [data-mode="dark"] .lang-select {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='gray' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    }
+
+    /* Otimização para ambiente móvel */
+    @media (max-width: 768px) {
+        .lang-select {
+            padding: 0.75rem 2rem 0.75rem 1rem;
+            /* Área de toque maior */
+        }
+
+        .lang-dropdown {
+            min-width: 140px;
+            /* Área de seleção mais ampla em dispositivos móveis */
+            /* margin-top: -15rem; */
+            margin-bottom: 1rem;
+        }
+    }
+
+    /* X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+    /* XX-Large devices (larger desktops, 1400px and up) */
+    @media (min-width: 1400px) {
+        .lang-dropdown {
+            margin-bottom: 1rem;
+        }
+    }
+</style>
 
 <div class="lang-dropdown">
     <select class="lang-select form-select" onchange="changeLang(this.value)" aria-label="Selecionar Idioma">
-    {%- for lang in site.languages -%}
+        {%- for lang in site.languages -%}
         <option value="{% if lang == site.default_lang %}{{ page.url }}{% else %}/{{ lang }}{{ page.url }}{% endif %}"
-                {% if lang == site.active_lang %}selected{% endif %}>
+            {% if lang==site.active_lang %}selected{% endif %}>
             {% case lang %}
             {% when 'pt-BR' %}Português
             {% when 'en' %}English
             {% else %}{{ lang }}
             {% endcase %}
         </option>
-    {%- endfor -%}
+        {%- endfor -%}
     </select>
 </div>
 
 <script>
-function changeLang(url) {
-    window.location.href = url;
-}
+    function changeLang(url) {
+        window.location.href = url;
+    }
 </script>
