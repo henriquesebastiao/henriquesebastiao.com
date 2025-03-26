@@ -5,6 +5,8 @@
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fhenriquesebastiao.com%2F)](https://henriquesebastiao.com)
 [![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=Cloudflare&logoColor=white)](https://henriquesebastiao.com/)
 
+Link: [https://henriquesebastiao.com](https://henriquesebastiao.com)
+
 A ideia aqui é ter um lugar sob o meu controle, onde eu possa compartilhar meus pensamentos, percepções e devaneios.
 Já há algum tempo em que venho cogitando a abordagem que mais me agradasse para escrever meus posts,
 depois de algum tempo testanddo essa implementação com Jekyll cheguei a conclusão de que vou seguir por esse caminho.
@@ -21,6 +23,10 @@ Fiz algumas customizações no tema, as principais estão listadas abaixo.
 - `post_image` - imagem principal que aparece no início da pastagem e no card do post na página home.
 - `scripts` (lista) - adiciona arquivos JavaScript customizados ao head da página.
 - `styles` (lista) - adiciona arquivos CSS customizados ao head da página.
+
+#### Internacionalização
+
+Os páginas possuem tradução para o inglês, usando o plugin [Polyglot](https://polyglot.untra.io/).
 
 ### Construindo
 
@@ -48,5 +54,5 @@ bundle install
 5. Por fim inicialize a aplicação:
 
 ```shell
-make run
+bundle exec jekyll s -l
 ```
