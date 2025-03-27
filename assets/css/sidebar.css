@@ -1,3 +1,7 @@
+.curriculum-tab {
+    display: none;
+}
+
 /* X-Small devices (portrait phones, less than 576px)
 No media query for `xs` since this is the default in Bootstrap */
 
@@ -77,5 +81,13 @@ No media query for `xs` since this is the default in Bootstrap */
 
     .sidebar-bottom {
         margin: 0;
+    }
+}
+
+/* Exibe botão de redirecionamento para currículo 
+apenas em telas grandes */
+@media (min-height: 900px) {
+    .curriculum-tab {
+        display: block;
     }
 }
