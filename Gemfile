@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 gem "jekyll-theme-chirpy", "~> 7.2", ">= 7.2.4"
-gem "erb", "~> 4.0"
+gem "erb", "~> 5.0"
 
 group :jekyll_plugins do
   gem "jekyll-polyglot"
