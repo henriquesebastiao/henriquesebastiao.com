@@ -1,4 +1,4 @@
-FROM ruby:3.4.2 as builder
+FROM ruby:3.4.4 as builder
 WORKDIR /app
 COPY Gemfile ./
 RUN bundle config set without 'test' && \
