@@ -1,7 +1,7 @@
 // Icons provided by https://devicon.dev/
 const tools = [
     // Languages, frameworks and tools
-    { icon: 'python' },
+    { icon: 'python', isClickable: false },
     { icon: 'fastapi', isClickable: false },
     { icon: 'django', isClickable: false },
     { icon: 'cplusplus', tag: 'c', hint: 'C++', isClickable: false },
