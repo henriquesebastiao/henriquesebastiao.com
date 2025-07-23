@@ -27,7 +27,7 @@ This is how my story began. Today I am studying for a degree in this area and I 
 
 As for the technical part, you can find more about me in the links below:
 
-[Linkedin](/linkedin/){:target="_blank"}, [GitHub](/github/){:target="_blank"}, [Portfolio](/portfolio/) e [Curriculum](/curriculo/){:target="_blank"}.
+[Linkedin](/linkedin/){:target="_blank"}, [GitHub](/github/){:target="_blank"}, [Portfolio](/portfolio/) e [Curriculum](/assets/pdf/cv.pdf){:target="_blank"}.
 
 
 On social media I am only present in [Mastodon](/mastodon/){:target="_blank"}.
