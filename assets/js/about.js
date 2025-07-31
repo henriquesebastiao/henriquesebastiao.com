@@ -4,6 +4,7 @@ const tools = [
     { icon: 'python', isClickable: false },
     { icon: 'fastapi', isClickable: false },
     { icon: 'django', isClickable: false },
+    { icon: 'streamlit', isClickable: false },
     { icon: 'cplusplus', tag: 'c', hint: 'C++', isClickable: false },
     { icon: 'c', tag: 'c', hint: 'C', isClickable: false },
     { icon: 'javascript', hint: 'JavaScript', isClickable: false },
