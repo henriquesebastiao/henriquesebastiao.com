@@ -105,7 +105,7 @@ poetry export --with dev --without-hashes --without-urls --output requirements.t
 
 ## Padrões de código
 
-Para docstrings sempre uso o padrão do [Google Docstrings](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html){:target="_blank"}. Me parece muito mais consiso o bonito.
+Para docstrings sempre uso o padrão do [Google Docstrings](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html){:target="_blank"}. Me parece muito mais conciso o bonito.
 
 ## Integração Contínua com GitHub Actions
 
@@ -162,7 +162,7 @@ Isso significa que você pode fazer o que quiser com o meu código. Se nos encon
 /*
 * --------------------------------------------------------------------------------------------
 * "THE BEER-WARE LICENSE":
-* <contato@henriquesebastiao.com> escreveu este arquivo. Se voce estiver lendo essa licensa,
+* <contato@henriquesebastiao.com> escreveu este arquivo. Se voce estiver lendo essa licença,
 * contanto que mantenha esta nota, voce poderá fazer o que quiser com este código.
 * Se nos encontrarmos algum dia, e você achar que vale a pena, você pode me pagar uma cerveja.
 * Henrique Sebastião

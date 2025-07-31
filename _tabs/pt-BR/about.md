@@ -44,7 +44,7 @@ Alternativamente você pode encontrar todos os meus links [aqui](/links/).
 
 Eventualmente escrevo posts sobre desenvolvimento, redes, e tecnologia em geral no meu [blog](/).
 
-#### Outras tecnologiais e ferramentas com as quais tenho conhecimento
+#### Outras tecnologias e ferramentas com as quais tenho conhecimento
 
 - **PostgreSQL** - como banco de dados SQL.
 - **HTML** e **CSS** - para front-end e usando ferramentas como Bootstrap e TailwindCSS.

@@ -46,9 +46,9 @@ O CLI tem uma documentação completa desenvolvida com MkDocs e hospedada no Rea
 
 ## [Netmikro](/netmikro/){:target="_blank"}
 
-Netmikro é uma biblioteca simples que fornece uma abstracao para facilitar o gerenciamento roteadores Mikrotik usando Python, simplificando tarefas de configuração e monitoramento. Usando a poderosa biblioteca `Netmiko` para gerar uma conexão SSH com o roteador, a biblioteca Netmikro fornece uma interface mais amigável para realizar tarefas comuns de gerenciamento de roteadores Mikrotik.
+Netmikro é uma biblioteca simples que fornece uma abstração para facilitar o gerenciamento roteadores Mikrotik usando Python, simplificando tarefas de configuração e monitoramento. Usando a poderosa biblioteca `Netmiko` para gerar uma conexão SSH com o roteador, a biblioteca Netmikro fornece uma interface mais amigável para realizar tarefas comuns de gerenciamento de roteadores Mikrotik.
 
-Um explo de uso da biblioteca:
+Um exemplo de uso da biblioteca:
 
 ```python
 >>> from netmikro import RouterOS

@@ -8,9 +8,9 @@ tags: [mikrotik, security, network, firewall]
 image: /480a268a-49e3-458c-df9f-748528b4a100/public
 ---
 
-Desde o ano de 2021 tenho trabalhado predominantemente como técnico de redes, eu realmente sou o cara de campo do suporte técnico. Nesse meio tempo eu nunca precisei de fato aprender a configurar roteadores Mikrotik, mas como eu acabei tendo interesse e posteriormente ingressando em um curso superior de tecnologia, eu meio que entrei nesse mundo por entuasiasmo mesmo.
+Desde o ano de 2021 tenho trabalhado predominantemente como técnico de redes, eu realmente sou o cara de campo do suporte técnico. Nesse meio tempo eu nunca precisei de fato aprender a configurar roteadores Mikrotik, mas como eu acabei tendo interesse e posteriormente ingressando em um curso superior de tecnologia, eu meio que entrei nesse mundo por entusiasmo mesmo.
 
-Já faz algum tempo que venho pensando sobre a negligencia que muitas pessoas, e até empresas acabam tendo ao configurar roteadores Mikrotik, deixando sua redes totalmente vulnerávels para eventuais ataques, óbviamente essa não devia ser a intenção, mas algumas coisas acabam passando despercebidas aos olhos menos experientes. Tendo em vista essa falha, hoje venho compartilhar um pouco de tudo que já aprendi na vida, com os erros e com outras pessoas muito mais capacitadas do que eu.
+Já faz algum tempo que venho pensando sobre a negligencia que muitas pessoas, e até empresas acabam tendo ao configurar roteadores Mikrotik, deixando sua redes totalmente vulneráveis para eventuais ataques, obviamente essa não devia ser a intenção, mas algumas coisas acabam passando despercebidas aos olhos menos experientes. Tendo em vista essa falha, hoje venho compartilhar um pouco de tudo que já aprendi na vida, com os erros e com outras pessoas muito mais capacitadas do que eu.
 
 > A maioria dos passos citados nesse artigo são voltados para roteadores Mikrotik, mas os conceitos podem ser aplicados em quaisquer outros roteadores, e até mesmo outros tipos de dispositivos.
 {: .prompt-info }
@@ -32,7 +32,7 @@ O erro mais comum e sem sombra de dúvidas, o mais problemático, são os rotead
 - Usuário: `admin`
 - Senha: em branco
 
-Caso seu roteador esteja recebendo um IP público (também chamado de IP válido por alguns profissionais de redes) ou mesmo que esteja por trás de um NAT que não tem um firewall para te proteger, provavelmente esse vai ser o seu primeiro problema. Todo o dispositivo que é acessível apartir da internet é alvo constante de tentativas de acesso indevido realizadas por agentes maliciosos espalhados pelo mundo inteiro, estes tentam invadir seu dispositivo em busca de transforma-lo em um bot para ataques a terceiros. Você não necessariamente pode ser o alvo, mas caso seu dispositivo seja invadido, ele será usado como marionete integrando uma rede (chamada de botnet) com outros milhares de dispositivos IoT infectados, afim de realizar ataques [DDoS](https://www.cloudflare.com/pt-br/learning/ddos/what-is-a-ddos-attack/){:target="_blank"} e o que mais passar pela mente do atacante. Um caso famoso é o botnet [Mirai](https://www.cloudflare.com/pt-br/learning/ddos/glossary/mirai-botnet/){:target="_blank"}.
+Caso seu roteador esteja recebendo um IP público (também chamado de IP válido por alguns profissionais de redes) ou mesmo que esteja por trás de um NAT que não tem um firewall para te proteger, provavelmente esse vai ser o seu primeiro problema. Todo o dispositivo que é acessível a partir da internet é alvo constante de tentativas de acesso indevido realizadas por agentes maliciosos espalhados pelo mundo inteiro, estes tentam invadir seu dispositivo em busca de transforma-lo em um bot para ataques a terceiros. Você não necessariamente pode ser o alvo, mas caso seu dispositivo seja invadido, ele será usado como marionete integrando uma rede (chamada de botnet) com outros milhares de dispositivos IoT infectados, afim de realizar ataques [DDoS](https://www.cloudflare.com/pt-br/learning/ddos/what-is-a-ddos-attack/){:target="_blank"} e o que mais passar pela mente do atacante. Um caso famoso é o botnet [Mirai](https://www.cloudflare.com/pt-br/learning/ddos/glossary/mirai-botnet/){:target="_blank"}.
 
 Portanto, certifique-se de configurar um usuário com uma senha suficientemente segura para seu roteador, com letras maiúsculas, minúsculas, números e caracteres especiais.
 
@@ -46,11 +46,11 @@ Ok, partindo do ponto de que sabemos que não é nada profissional deixarmos log
 
 No mundo da programação já ouvi pessoas falando, “Ah, eu uso Python 3.7 porque é mais estável…”. O problema é que esse argumento cai por terra tão rápido quanto é dito, se tal versão fosse estável e confiável não haveriam laçamento de novas versões apenas com correções de bugs.
 
-O mesmo vale para roteradores. A maioria das profissionais de redes ainda usam até hoje versões relativamente antigas de firmwares, uma rápida pesquisa por dispositivos Mikrotik no [Shodan.io](https://www.shodan.io/){:target="_blank"} mostra isso:
+O mesmo vale para roteadores. A maioria das profissionais de redes ainda usam até hoje versões relativamente antigas de firmwares, uma rápida pesquisa por dispositivos Mikrotik no [Shodan.io](https://www.shodan.io/){:target="_blank"} mostra isso:
 
 Aqui vemos a versão 6.48.6 sendo usada pela maioria dos dispositivos Mikrotik visíveis na internet, tal versão foi anunciada no dia 12 de dezembro de 2021, e atualmente na data em que este artigo foi escrito, a versão mais recente v6 do RouterOS é a 6.49.13 (long-term). O problema é que a própria versão 6.48.6 possui vulnerabilidade conhecidas, como descrito a seguir.
 
-> [CVE-2023-30799](https://nvd.nist.gov/vuln/detail/CVE-2023-30799){:target="_blank"} - MikroTik RouterOS antes de 6.49.7 (stable) e até 6.48.6 (long-term) são vulneráveis a um problema de escalonamento de privilégios. Um invasor remoto e autenticado pode escalar privilégios de administrador para superadministrador no Winbox ou na interface HTTP. O invasor pode abusar dessa vulnerabilidade para executar código arbitrário no sistema.
+> [CVE-2023-30799](https://nvd.nist.gov/vuln/detail/CVE-2023-30799){:target="_blank"} - MikroTik RouterOS antes de 6.49.7 (stable) e até 6.48.6 (long-term) são vulneráveis a um problema de escalonamento de privilégios. Um invasor remoto e autenticado pode escalar privilégios de administrador para super administrador no Winbox ou na interface HTTP. O invasor pode abusar dessa vulnerabilidade para executar código arbitrário no sistema.
 {: .prompt-danger }
 
 Outra vulnerabilidade que ficou bastante conhecida nos roteadores Mikrotik foi  a [CVE-2018-14847](https://nvd.nist.gov/vuln/detail/CVE-2018-14847){:target="_blank"}, na qual era possível por meio de um simples script obter os usuários e senhas de um roteador até a versão 6.42. Veja um exemplo de ataque feito em laboratório que se aproveita dessa falha:
@@ -94,7 +94,7 @@ Agentes mal intencionados podem usar softwares com [Nmap](https://nmap.org/){:ta
 
 ## Mãos na massa
 
-Agora que já sabemos quais hábitos práticar para dificultar o acesso indevido aos nossos roteadores, vamos partir para a cereja do bolo quando o assunto é segurança de roteadores, as **regras de firewall**.
+Agora que já sabemos quais hábitos praticar para dificultar o acesso indevido aos nossos roteadores, vamos partir para a cereja do bolo quando o assunto é segurança de roteadores, as **regras de firewall**.
 
 As regras de firewall são a última linha de defesa do seu roteador contra ataques externos. Elas permitem que você controle o tráfego de entrada e saída do seu roteador, bloqueando ou permitindo conexões específicas. Vamos detalhar como configurar regras de firewall eficazes nos passos a seguir.
 
@@ -141,14 +141,14 @@ Aceitando conexões válidas e rejeitando inválidas que têm o roteador como de
 
 ```bash
 /ip firewall filter
-add action=accept chain=input comment="Aceita conexoes estabelecida e relacionadas" connection-state=established,related
-add action=drop chain=input comment="Descarta conexoes invalidas" connection-state=invalid
+add action=accept chain=input comment="Aceita conexões estabelecida e relacionadas" connection-state=established,related
+add action=drop chain=input comment="Descarta conexões invalidas" connection-state=invalid
 ```
 {: .nolineno }
 
 ### Liberando portas de acesso
 
-Agora iremos liberar todos os protocolos que utilizamos em nosso roteador e bloquer todos os que não usamos para reduzir a superfície de ataque. Para liberar o acesso via SSH, Winbox e Webfig para a sub-rede de gerência, usamos as seguintes regras:
+Agora iremos liberar todos os protocolos que utilizamos em nosso roteador e bloquear todos os que não usamos para reduzir a superfície de ataque. Para liberar o acesso via SSH, Winbox e Webfig para a sub-rede de gerência, usamos as seguintes regras:
 
 ```bash
 add action=accept chain=input comment="Libera SSH" dst-port=2222 protocol=tcp src-address-list=support
@@ -225,6 +225,6 @@ Agora é a parte delicada, iremos criar a regra de firewall que bloqueia tudo o 
 {: .prompt-danger }
 
 ```bash
-/ip firewall filter add action=drop chain=input comment="Bloquia todo o resto!"  # NÃO ATIVE ESTA REGRA ANTES DE TER CERTEZA DE TODAS AS REGRAS DE ACEITAÇÃO QUE VOCÊ PRECISA" disabled=yes
+/ip firewall filter add action=drop chain=input comment="Bloqueia todo o resto!"  # NÃO ATIVE ESTA REGRA ANTES DE TER CERTEZA DE TODAS AS REGRAS DE ACEITAÇÃO QUE VOCÊ PRECISA" disabled=yes
 ```
 {: .nolineno }
