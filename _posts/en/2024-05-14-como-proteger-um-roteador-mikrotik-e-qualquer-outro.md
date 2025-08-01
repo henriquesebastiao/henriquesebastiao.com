@@ -5,7 +5,7 @@ author: henriquesebastiao
 date: 2024-05-16 17:00:00 -0400
 categories: [Network, Mikrotik]
 tags: [mikrotik, security, network, firewall]
-image: /480a268a-49e3-458c-df9f-748528b4a100/public
+image: img/preview-image-posts/2024/en/2024-05-16.png
 ---
 
 Since 2021, I have been working predominantly as a network technician. I am really the guy on the technical support field. In the meantime, I never really needed to learn how to configure Mikrotik routers, but since I ended up getting interested and later enrolled in a higher education technology course, I kind of got into this world out of enthusiasm.

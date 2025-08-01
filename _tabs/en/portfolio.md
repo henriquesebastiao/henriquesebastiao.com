@@ -3,7 +3,7 @@ layout: page
 icon: fas fa-briefcase
 order: 3
 title: Portfolio
-image: /11aa8482-8fee-4a90-c712-67c55f9cca00/public
+image: img/portfolio-en-preview-image.png
 ---
 
 Some of the projects I developed during this time of study in development.
