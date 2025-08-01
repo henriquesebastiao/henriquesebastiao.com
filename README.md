@@ -1,7 +1,6 @@
 # 📝 Blog pessoal e Portfólio
 
 [![Deploy](https://github.com/henriquesebastiao/henriquesebastiao.com/actions/workflows/deploy.yml/badge.svg)](https://github.com/henriquesebastiao/henriquesebastiao.com/actions/workflows/deploy.yml)
-[![Check Broken Links](https://github.com/henriquesebastiao/henriquesebastiao.com/actions/workflows/check-bronken-links.yml/badge.svg)](https://github.com/henriquesebastiao/henriquesebastiao.com/actions/workflows/check-bronken-links.yml)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fhenriquesebastiao.com%2F)](https://henriquesebastiao.com)
 [![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=Cloudflare&logoColor=white)](https://henriquesebastiao.com/)
 
