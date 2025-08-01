@@ -7,7 +7,7 @@ styles:
   - /assets/css/about.css
 scripts:
   - /assets/js/about.js
-image: /0ec0749c-7f9e-4c5a-6ec9-b97ff21fee00/public
+image: img/about-preview-image.png
 ---
 
 ## Olá! Eu sou Henrique Sebastião 👋

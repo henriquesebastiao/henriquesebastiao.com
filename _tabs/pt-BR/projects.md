@@ -6,5 +6,5 @@ no_title: true
 no_post: true
 icon: fas fa-box-archive
 order: 4
-image: /1074cf69-d223-400f-7573-f67f6e2c4b00/public
+image: img/projetos-preview-image.png
 ---

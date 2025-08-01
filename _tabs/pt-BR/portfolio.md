@@ -3,7 +3,7 @@ layout: page
 icon: fas fa-briefcase
 order: 3
 title: Portfólio
-image: /11aa8482-8fee-4a90-c712-67c55f9cca00/public
+image: img/portfolio-preview-image.png
 ---
 
 Alguns dos projetos que desenvolvi durante esse tempo de estudo em desenvolvimento.
