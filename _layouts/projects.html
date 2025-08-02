@@ -17,7 +17,11 @@ layout: page
                 </h1>
                 <div class="card-text content mb-0" style="margin-top: -0.2em;">
                     <p>
-                        {{ project.description }}
+                        {% if page.lang == 'pt' %}
+                            {{ project.description }}
+                        {% else %}
+                            {{ project.description_en }}
+                        {% endif %}
                     </p>
                 </div>
                 <div class="post-meta">

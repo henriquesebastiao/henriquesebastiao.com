@@ -7,4 +7,5 @@ no_post: true
 icon: fas fa-box-archive
 order: 4
 image: img/projects-image-preview.png
+lang: en
 ---
