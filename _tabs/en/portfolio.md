@@ -6,7 +6,8 @@ title: Portfolio
 image: img/portfolio-en-preview-image.png
 ---
 
-Some of the projects I developed during this time of study in development.
+Below are some of the main projects I developed during my time studying and developing.
+You can see all my other projects on the [projects](/en/projects/) page.
 
 ## [Dotum](/dotum/){:target="_blank"} - Accounts payable and receivable system
 

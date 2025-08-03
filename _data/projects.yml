@@ -1,14 +1,22 @@
-- title: Modernização do Manejo API
-  tags: [fastapi, sqlalchemy, postgres, docker, opentelemetry, pytest]
-  github: /manejo/
-  deploy: https://manejo.henriquesebastiao.com
+- title: LifeSync
+  tags: [python, fastapi, sqlalchemy, postgres, docker]
+  github: /lifesync/
   description: >-
-     API assíncrona com observabilidade para gerenciamento de rebanho bovino criada com FastAPI.
+      Centralizando as informações importantes da vida em um único lugar.
   description_en: >-
-     Asynchronous API with observability for cattle herd management built with FastAPI.
+     Centralizing life's important information in one place.
+
+- title: Dotum
+  tags: [python, fastapi, sqlalchemy, streamlit, postgres, docker, pytest]
+  github: /dotum/
+  deploy: https://dotum-web.henriquesebastiao.com
+  description: >-
+     Sistema de contas a pagar e contas a receber.
+  description_en: >-
+     Accounts payable and accounts receivable system.
 
 - title: Poupy
-  tags: [django, html, css, docker, selenium, pytest]
+  tags: [python, django, html, css, docker, selenium, pytest]
   github: /poupy/
   deploy: https://poupy.henriquesebastiao.com
   description: >-
@@ -19,11 +27,36 @@
 - title: Saturn
   tags: [arduino, c, c++]
   github: /saturn/
-  deploy: https://github.com/henriquesebastiao/saturn
   description: >-
      Firmware de Redteam para o Cardputer da M5Stack com chip ESP32S3.
   description_en: >-
      Redteam firmware for M5 Stack Cardputer with ESP32S3 Chip.
+
+- title: Downtify
+  tags: [python, fastapi, docker]
+  github: /downtify/
+  deploy: https://downtify.henriquesebastiao.com
+  description: >-
+     Aplicativo self-hosted para baixar músicas do Spotify.
+  description_en: >-
+     Self-hosted application to download music from Spotify.
+
+- title: Modernização do Manejo API
+  tags: [python, fastapi, sqlalchemy, postgres, docker, opentelemetry, pytest]
+  github: /manejo/
+  deploy: https://manejo.henriquesebastiao.com
+  description: >-
+     API assíncrona com observabilidade para gerenciamento de rebanho bovino criada com FastAPI.
+  description_en: >-
+     Asynchronous API with observability for cattle herd management built with FastAPI.
+
+- title: Skyport
+  tags: [python, pytest]
+  github: /skyport/
+  description: >-
+     Uma interface para consumir APIs de agências espaciais programaticamente.
+  description_en: >-
+     An interface for consuming space agency APIs programmatically.
 
 - title: Netmikro
   tags: [python, netmiko, pydantic, pytest]
@@ -34,8 +67,16 @@
   description_en: >-
      A Python library for managing Mikrotik routers programmatically.
 
+- title: Blindage
+  tags: [python, typer, cryptography, argon2, totp]
+  github: /blindage/
+  description: >-
+     Um gerenciador de senhas Pythonico.
+  description_en: >-
+     A Pythonic Password Manager.
+
 - title: Timesheet
-  tags: [django, postgres, reportlab]
+  tags: [python, django, postgres, reportlab]
   github: /timesheet/
   description: >-
      Sistema simples feito com Django Admin para armazenar registros e gerar folhas de ponto em PDF.

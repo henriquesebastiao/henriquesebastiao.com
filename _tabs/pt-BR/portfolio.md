@@ -6,7 +6,8 @@ title: Portfólio
 image: img/portfolio-preview-image.png
 ---
 
-Alguns dos projetos que desenvolvi durante esse tempo de estudo em desenvolvimento.
+Abaixo estão listados alguns dos principais projetos que desenvolvi durante esse tempo de estudo em desenvolvimento.
+Você pode ver todos os meus demais projetos na página de [projetos](/projects/).
 
 ## [Dotum](/dotum/){:target="_blank"} - Sistema de contas a pagar e a receber
 
