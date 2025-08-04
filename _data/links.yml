@@ -1,7 +1,22 @@
-- title: Website
+- title: Site pessoal e Blog
   icon: fa-solid fa-globe
   username: "henriquesebastiao.com"
   link: /
+
+- title: Email
+  icon: fa-solid fa-envelope
+  username: "contato@henriquesebastiao.com"
+  link: mailto:contato@henriquesebastiao.com
+
+- title: Portfólio
+  icon: fa-solid fa-briefcase
+  username: "henriquesebastiao.com/portfolio"
+  link: /portfolio/
+
+- title: Currículo
+  icon: fa-solid fa-file
+  username: "henriquesebastiao.com/curriculo"
+  link: /assets/pdf/cv.pdf
 
 - title: LinkedIn
   icon: fa-brands fa-linkedin
@@ -18,17 +33,7 @@
   username: "@henriquesebastiao"
   link: /mastodon/
 
-- title: Email
-  icon: fa-solid fa-envelope
-  username: "contato@henriquesebastiao.com"
-  link: mailto:contato@henriquesebastiao.com
-
-- title: Portfólio
-  icon: fa-solid fa-briefcase
-  username: "henriquesebastiao.com/portfolio"
-  link: /portfolio/
-
-- title: Currículo
-  icon: fa-solid fa-file
-  username: "henriquesebastiao.com/curriculo"
-  link: /assets/pdf/cv.pdf
+- title: Instagram
+  icon: fa-brands fa-instagram
+  username: "@hick.hs"
+  link: /instagram/
