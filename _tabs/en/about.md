@@ -15,7 +15,7 @@ tabe_name: sobre
 
 ### Introduction
 
-I am a back-end developer focused on [Python](https://www.python.org/), with 1 year and 8 months of experience and a Computer Science graduate. I use tools and frameworks such as [FastAPI](https://fastapi.tiangolo.com/) and [Django](https://www.djangoproject.com/), PyTest, Docker, GIT, SQL databases, etc.
+I am a back-end developer focused on [Python](https://www.python.org/), with 2 years of experience and a Computer Science graduate. I use tools and frameworks such as [FastAPI](https://fastapi.tiangolo.com/) and [Django](https://www.djangoproject.com/), PyTest, Docker, GIT, SQL databases, etc.
 I always try to develop robust applications to solve the problems of the people around me.
 In addition, I have between three and four years of experience with computer networks and Linux systems in my academic and professional life.
 
@@ -25,12 +25,13 @@ I have been fascinated by the Universe since I was a child, so much so that duri
 
 This is how my story began. Today I am studying for a degree in this area and I am constantly seeking to learn new technologies and tools. I focus on back-end development and I often try to learn technologies related to DevOps, which is also facilitated by my professional experience as a network technician and the use of Linux systems in my day-to-day work, since these skills are completely related.
 
+See more about my life [here](https://life.henriquesebastiao.com){:target="_blank"}.
+
 As for the technical part, you can find more about me in the links below:
 
 [Linkedin](/linkedin/){:target="_blank"}, [GitHub](/github/){:target="_blank"}, [Portfolio](/portfolio/) e [Curriculum](/assets/pdf/cv.pdf){:target="_blank"}.
 
-
-On social media I am only present in [Mastodon](/mastodon/){:target="_blank"}.
+On social media I am present at [Mastodon](/mastodon/){:target="_blank"} and [Instagram](/instagram/){:target="_blank"}.
 
 Alternatively you can find all my links [here](/links/).
 

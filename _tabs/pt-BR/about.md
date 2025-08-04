@@ -15,7 +15,7 @@ image: img/about-preview-image.png
 ### Introdução
 
 Moro numa cidadezinha do interior de Mato Grosso, Brasil.
-Sou desenvolvedor *back-end* com foco em [Python](https://www.python.org/){:target="_blank"}, com 1 ano e 8 meses de experiência e graduando em Ciência da Computação.
+Sou desenvolvedor *back-end* com foco em [Python](https://www.python.org/){:target="_blank"}, com 2 anos de experiência e graduando em Ciência da Computação.
 Usando ferramentas e frameworks como [FastAPI](https://fastapi.tiangolo.com/){:target="_blank"} e [Django](https://www.djangoproject.com/){:target="_blank"},
 PyTest, Docker, GIT, bancos de dados SQL, etc. Sempre procuro desenvolver aplicações robustas para solucionar os problemas das pessoas ao meu redor.
 Ademais, tenho entre três e quatro anos de experiência com redes de computadores e sistemas Linux no meu dia a dia acadêmico e profissional.
@@ -33,12 +33,13 @@ Assim começou a minha história, hoje realizo um curso de graduação na área 
 Tenho foco em desenvolvimento *back-end* e muito frequentemente procuro aprender tecnologias relacionadas a *DevOps*, o que de certa forma é facilitado também 
 pela minha experiência profissional como técnico de redes e o uso de sistemas Linux no meu dia a dia, uma vez que esses conhecimentos são totalmente correlatos.
 
+Veja mais sobre a minha vida [aqui](https://life.henriquesebastiao.com){:target="_blank"}.
+
 Quanto a parte técnica, você pode encontrar mais sobre mim nos links abaixo:
 
 [Linkedin](/linkedin/){:target="_blank"}, [GitHub](/github/){:target="_blank"}, [Portfólio](/portfolio/) e [Currículo](/assets/pdf/cv.pdf){:target="_blank"}.
 
-
-Nas redes sociais me faço presente apenas no [Mastodon](/mastodon/){:target="_blank"}.
+Nas redes sociais me faço presente no [Mastodon](/mastodon/){:target="_blank"} e no [Instagram](/instagram/){:target="_blank"}.
 
 Alternativamente você pode encontrar todos os meus links [aqui](/links/).
 
