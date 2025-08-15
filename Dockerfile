@@ -6,7 +6,7 @@ RUN bundle config set without 'test' && \
 COPY . .
 RUN JEKYLL_ENV=production bundle exec jekyll build
 
-FROM nginx:1.29.0-alpine
+FROM nginx:1.29.1-alpine
 COPY --from=builder /app/_site /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
