@@ -64,7 +64,7 @@ analytics:
   goatcounter:
     id: henriquesebastiao
   umami:
-    id: 9a4a72db-d34f-4873-92d6-4b8b3d4e3eeb
+    id: cb51ed63-b38f-4912-8e95-760b3caf5a81
     domain: https://umami.henriquesebastiao.com
   matomo:
     id: 1
