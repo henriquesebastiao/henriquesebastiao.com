@@ -12,6 +12,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: website
+      url: https://henriquesebastiao.com/
 
     steps:
       - name: Download site
