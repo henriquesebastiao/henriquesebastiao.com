@@ -10,15 +10,15 @@ post_image:
   alt: HD externo Seagate Foto de <a href="https://unsplash.com/pt-br/@uwukuriemery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Uwukuri Emery</a> na <a href="https://unsplash.com/pt-br/fotografias/um-close-up-de-um-porta-cartao-preto-em-uma-superficie-de-madeira-se1G--2c6JU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 ---
 
-Há algum tempo comprei minicomputador da Lenovo, um ThinkCentre, para usá-lo como meu servidor pessoal como uma espécie de homelab, mas meio que acabo usando ele em “produção” hoje em dia, seja para hospedar meus projetos pessoais, ou ferramentas *self-hosted* que utilizo. De qualquer forma este servidor em si e o que rodo nele são assunto para outro post.
+Há algum tempo comprei minicomputador da Lenovo, um ThinkCentre, para usá-lo como meu servidor pessoal como uma espécie de *homelab*, mas meio que acabo usando ele em “produção” hoje em dia, seja para hospedar meus projetos pessoais, ou ferramentas *self-hosted* que utilizo. De qualquer forma este servidor em si e o que rodo nele são assunto para outro post.
 
-Ele possui apenas 512 GB de armazenamento por meio de um SSD SATA, o que é bem modesto e o bastante para que eu já possa me divertir. Um dos serviços que executo no servidor e que mais uso no dia a dia (de fato todo dia) é o Jellyfin, uma ferramenta open source de streaming de vídeo e áudio auto-hospedada e sobre meu controle, é como se fosse meu Netflix e Spotify pessoal e o melhor, gratuito.
+Ele possui apenas 512 GB de armazenamento por meio de um SSD SATA, o que é bem modesto e o bastante para que eu já possa me divertir. Um dos serviços que executo no servidor e que mais uso no dia a dia (de fato todo dia) é o [Jellyfin](https://jellyfin.org/){:target="_blank"}, uma ferramenta open source de streaming de vídeo e áudio auto-hospedada e sob meu controle, **é como se fosse meu Netflix e Spotify pessoal e o melhor, gratuito**.
 
-O Jellyfin funciona muito bem, no entanto, cabe ao usuário baixar os conteúdos que serão hospedados nele, como músicas, filmes, séries, etc. Com isso um usuário mais hardcore poderia ocupar os poucos 512 GB de armazenamento rapidamente, o que não foi o meu caso até agora, uma vez que baixei alguns poucos filmes e músicas e fiquei consumindo eles por um tempo. Entretanto, desejo baixar algumas vídeo aulas de cursos e quero colocá-las no meu Jellyfin para poder assisti-las com mais comodidade e até mesmo de fora da minha casa. Para isso preciso de mais armazenamento.
+O Jellyfin funciona muito bem, no entanto, cabe ao usuário baixar os conteúdos que serão hospedados nele, como músicas, filmes, séries, etc. Com isso um usuário mais *hardcore* poderia ocupar os poucos 512 GB de armazenamento rapidamente, o que não foi o meu caso até agora, uma vez que baixei alguns poucos filmes e músicas e fiquei consumindo eles por um tempo. Entretanto, desejo baixar algumas vídeo aulas de cursos e quero colocá-las no meu Jellyfin para poder assisti-las com mais comodidade e até mesmo de fora da minha casa. Para isso preciso de mais armazenamento.
 
-Para minha felicidade eu tenho um HD de 1 TB parado e que não estou utilizando, ou melhor, estava. O problema inicial é que meu servidor não tem espaço para instalar um HD de 3,5”, além disso, o HD é criptografado e não tenho motivação alguma para o formatar e como se não bastasse, gostaria de mante-lo externo ao servidor para transportá-lo com facilidade caso fosse preciso.
+Para minha felicidade eu tenho um HD de 1 TB parado e que não estou utilizando, ou melhor, não estava até agora. O problema inicial é que meu servidor não tem espaço nem slots para instalar um HD de 3,5”, além disso, **o HD é criptografado** e não tenho motivação alguma para o formatar e como se não bastasse, gostaria de mantê-lo externo ao servidor para transportá-lo com facilidade caso fosse preciso.
 
-Eu já vinha pensando há algum tempo que seria possível usá-lo com o servidor nessas condições e por meio de uma case externa. Mas estava procrastinando para reservar um tempo e pesquisar como configurá-lo, hoje isso acabou. E venho descrever aqui como foi o processo, até mesmo para que eu possa me relembrar um dia.
+Eu já vinha pensando há algum tempo que seria possível usá-lo com o servidor nessas condições. Mas estava procrastinando para reservar um tempo e pesquisar como configurá-lo, hoje isso acabou. E venho descrever aqui como foi o processo, até mesmo para que eu possa me relembrar um dia.
 
 ## Identificar o HD externo
 
@@ -46,6 +46,7 @@ sdb                         8:16   0 931,5G  0 disk
 ```
 
 Aqui podemos ver que meu dispositivo é o `/dev/sdb1`.
+
 ## Desbloquear o disco criptografado
 
 Como meu HD é criptografado, o próximo passo vai ser desbloqueá-lo usando a ferramenta `cryptsetup`:
@@ -103,7 +104,7 @@ sudo cryptsetup luksClose hd_externo
 
 ## Montando o disco automaticamente
 
-No meu caso, para usar o disco continuamente com o servidor para armazenamento de arquivos é importante que o mesmo seja montado automaticamente sempre que o servidor reiniciar, para isso precisaremos de algumas configurações a mais.
+No meu caso, para **usar o disco continuamente com o servidor** para armazenamento de arquivos é **importante que o mesmo seja montado automaticamente sempre que o servidor reiniciar**, para isso precisaremos de algumas configurações a mais.
 
 Para montar o disco automaticamente durante o boot do servidor sem a necessidade de digitar a senha de desbloqueio iremos criar um arquivo keyfile aleatório de 4 KB com o seguinte comando:
 
@@ -151,7 +152,7 @@ Agora teste desbloquear o disco usando o keyfile:
 sudo cryptsetup luksOpen /dev/sdb1 hd_externo --key-file /root/hd_externo.key
 ```
 
-Se desbloquear sem pedir senha significa que está tudo certo!
+Se desbloquear sem pedir senha significa que está tudo certo 😉.
 
 Agora para o dispositivo seja desbloqueado corretamente durante o boot do servidor precisamos fazer mais duas configurações.
 
@@ -189,7 +190,7 @@ estudos  lost+found  Videos
 
 ## Acessando os arquivos do HD via web por meio do filebrowser
 
-Umas das ferramentas que utilizo para manusear os arquivos do meu servidor de maneira prática e rápida sem precisar necessariamente de um cliente FTP o SSH é o [filebrowser](https://github.com/filebrowser/filebrowser).
+Umas das ferramentas que utilizo para manusear os arquivos do meu servidor de maneira prática e rápida sem precisar necessariamente de um cliente FTP o SSH é o [filebrowser](https://github.com/filebrowser/filebrowser){:target="_blank"}.
 
 Para poder acessar os arquivos do HD pelo filebrowser apenas mapeei o conteúdo de `/mnt/hd_externo` do servidor para uma pasta chamada `hd` dentro o filebrowser, veja como ficou a configuração no `docker-compose.yml`:
 
@@ -211,6 +212,11 @@ filebrowser:
       - FB_ROOT=/data
       - FB_NOAUTH=true
 ```
+
+Na imagem abaixo você pode ver a pasta `hd` mapeada para `/data/hd` dentro do filebrowser:
+
+![Desktop View](img/2026-01-18-filebrowser.png)
+_Captura de tela do filebrowser_
 
 ## Acessando as mídias do HD pelo Jellyfin
 
