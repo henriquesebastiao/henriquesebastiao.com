@@ -1,6 +1,6 @@
 ---
-title: Como usar um HD externo criptografado em um servidor linux
-description: Como configurar um HD externo criptografado para uso em um servidor linux e mapear diretórios para uso em serviços como Jellyfin via Docker
+title: Como usar um HD externo criptografado em um servidor Linux
+description: Como configurar um HD externo criptografado para uso em um servidor Linux e mapear diretórios para uso em serviços como Jellyfin via Docker
 author: henriquesebastiao
 date: 2026-01-18 23:47:00 -0400
 categories: [Linux, Docker]
@@ -10,13 +10,13 @@ post_image:
   alt: HD externo Seagate Foto de <a href="https://unsplash.com/pt-br/@uwukuriemery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Uwukuri Emery</a> na <a href="https://unsplash.com/pt-br/fotografias/um-close-up-de-um-porta-cartao-preto-em-uma-superficie-de-madeira-se1G--2c6JU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 ---
 
-Há algum tempo comprei minicomputador da Lenovo, um ThinkCentre, com o objetivo de usá-lo como meu servidor pessoal como uma espécie de homelab, mas meio que acabo usando ele em "produção" hoje em dia, seja para hospedar meus projetos pessoais, ou ferramentas *self-hosted* que utilizo. De qualquer forma este servidor em si e o que rodo nele são assunto para um outro post.
+Há algum tempo comprei minicomputador da Lenovo, um ThinkCentre, para usá-lo como meu servidor pessoal como uma espécie de homelab, mas meio que acabo usando ele em “produção” hoje em dia, seja para hospedar meus projetos pessoais, ou ferramentas *self-hosted* que utilizo. De qualquer forma este servidor em si e o que rodo nele são assunto para outro post.
 
-Ele possui apenas 512 GB de armazenamento por meio de um SSD SATA, o que é bem modesto e o bastante para que eu já possa me dirvertir. Um dos serviços que executo no servidor e que mais uso no dia a dia (de fato todo dia) é o [Jellyfin](https://jellyfin.org/), uma ferramenta open source de streaming de vídeo e áudio auto-hospedada e sobre meu controle, é como se fosse meu Netflix e Spotify pessoal e o melhor, gratuito.
+Ele possui apenas 512 GB de armazenamento por meio de um SSD SATA, o que é bem modesto e o bastante para que eu já possa me divertir. Um dos serviços que executo no servidor e que mais uso no dia a dia (de fato todo dia) é o Jellyfin, uma ferramenta open source de streaming de vídeo e áudio auto-hospedada e sobre meu controle, é como se fosse meu Netflix e Spotify pessoal e o melhor, gratuito.
 
-O Jellyfin funciona muito bem, no entanto cabe ao uauário baixar os conteúdos que seram hospedados nele, como músicas, filmes, séries, etc. Com isso um usuário mais hardcore poderia ocupar os poucos 512 GB de armazenamento rapidamente, o que não foi o meu caso até agora, uma vez que baixei alguns poucos filmes e músicas e fiquei consumindo eles por um tempo. Entretanto, desejo baixar algumas video aulas de cursos e quero coloca-las no meu Jellyfin para que possa assisti-las com mais comodidade e até mesmo de fora da minha casa. Para isso preciso de mais armazenamento.
+O Jellyfin funciona muito bem, no entanto, cabe ao usuário baixar os conteúdos que serão hospedados nele, como músicas, filmes, séries, etc. Com isso um usuário mais hardcore poderia ocupar os poucos 512 GB de armazenamento rapidamente, o que não foi o meu caso até agora, uma vez que baixei alguns poucos filmes e músicas e fiquei consumindo eles por um tempo. Entretanto, desejo baixar algumas vídeo aulas de cursos e quero colocá-las no meu Jellyfin para poder assisti-las com mais comodidade e até mesmo de fora da minha casa. Para isso preciso de mais armazenamento.
 
-Para minha felicidade eu tenho um HD de 1 TB parado e que não estou utilizando, ou melhor, estava. O problema inicial é que meu servidor não tem espaço para instalar um HD de 3,5", além disso o HD é criptografado e não tenho motivação alguma para o formatar e como se não bastasse, gostaria de mante-lo externo ao servidor para tranportá-lo com facilidade caso fosse preciso.
+Para minha felicidade eu tenho um HD de 1 TB parado e que não estou utilizando, ou melhor, estava. O problema inicial é que meu servidor não tem espaço para instalar um HD de 3,5”, além disso, o HD é criptografado e não tenho motivação alguma para o formatar e como se não bastasse, gostaria de mante-lo externo ao servidor para transportá-lo com facilidade caso fosse preciso.
 
 Eu já vinha pensando há algum tempo que seria possível usá-lo com o servidor nessas condições e por meio de uma case externa. Mas estava procrastinando para reservar um tempo e pesquisar como configurá-lo, hoje isso acabou. E venho descrever aqui como foi o processo, até mesmo para que eu possa me relembrar um dia.
 
@@ -46,9 +46,9 @@ sdb                         8:16   0 931,5G  0 disk
 ```
 
 Aqui podemos ver que meu dispositivo é o `/dev/sdb1`.
-## Desbloquer o disco criptografado
+## Desbloquear o disco criptografado
 
-Como meu HD é criptografado, o próximo passo vai ser desbloquea-lo usando a ferramenta `cryptsetup`:
+Como meu HD é criptografado, o próximo passo vai ser desbloqueá-lo usando a ferramenta `cryptsetup`:
 
 ```bash
 sudo cryptsetup luksOpen /dev/sdb1 hd_externo
@@ -56,7 +56,7 @@ sudo cryptsetup luksOpen /dev/sdb1 hd_externo
 
 Onde `/dev/sdb1` é a partição criptografada e `hd_externo` o nome lógico que escolhi para identificar meu disco. Agora ele aparecerá como `/dev/mapper/hd_externo`.
 
-Digite a senha utilizada para criptografar o disco quando quando ela for solicitada.
+Digite a senha utilizada para criptografar o disco quando ela for solicitada.
 
 ## Montar o disco
 
@@ -66,7 +66,7 @@ Agora precisamos montar o disco, para isso criamos um ponto de montagem com o se
 sudo mkdir -p /mnt/hd_externo
 ```
 
-Para montar o disco para executar:
+Para montar o disco vamos executar:
 
 ```bash
 sudo mount /dev/mapper/hd_externo /mnt/hd_externo
@@ -155,7 +155,7 @@ Se desbloquear sem pedir senha significa que está tudo certo!
 
 Agora para o dispositivo seja desbloqueado corretamente durante o boot do servidor precisamos fazer mais duas configurações.
 
-Adicione a linha `hd_externo /dev/sdb1 /root/hd_externo.key luks` ao arquivo `/etc/crypttab` como seguinte comando:
+Adicione a linha `hd_externo /dev/sdb1 /root/hd_externo.key luks` ao arquivo `/etc/crypttab` com seguinte comando:
 
 ```bash
 sudo echo "hd_externo /dev/sdb1 /root/hd_externo.key luks" >> /etc/crypttab
@@ -171,6 +171,7 @@ sudo echo "/dev/mapper/hd_externo /mnt/hd_externo ext4 defaults,nofail 0 2" >> /
 
 > Use `nonfail` para evitar travar o boot se o HD não estiver conectado.
 > Ajuste `ext4` se o filesystem for outro (`xfs`, `btrfs`, etc).
+{: .prompt-warning }
 
 Agora para que as mudanças entrem em vigor reinicie o deamon do cryptsetup e monte de volta os discos com o seguinte comando:
 
@@ -188,7 +189,7 @@ estudos  lost+found  Videos
 
 ## Acessando os arquivos do HD via web por meio do filebrowser
 
-Umas das ferrametas que utilizo para manusear os arquivos do meu servidor de maneira prática e rápida sem precisar necessariamente de um cliente FTP o SSH é o [filebrowser](https://github.com/filebrowser/filebrowser).
+Umas das ferramentas que utilizo para manusear os arquivos do meu servidor de maneira prática e rápida sem precisar necessariamente de um cliente FTP o SSH é o [filebrowser](https://github.com/filebrowser/filebrowser).
 
 Para poder acessar os arquivos do HD pelo filebrowser apenas mapeei o conteúdo de `/mnt/hd_externo` do servidor para uma pasta chamada `hd` dentro o filebrowser, veja como ficou a configuração no `docker-compose.yml`:
 
@@ -213,7 +214,7 @@ filebrowser:
 
 ## Acessando as mídias do HD pelo Jellyfin
 
-Para consumir meus arquivos de mídia presentes no HD pelo Jellyfin tive apenas que realizar uma configuração semelhante a feita no filebrowser, mas desta vez mapeando a pasta `/mnt/hd_externo/Videos` para a pasta `/media/hd/Videos` dentro do container do Jellyfin, veja como ficou o `docker-compose.yml`:
+Para consumir meus arquivos de mídia presentes no HD pelo Jellyfin tive apenas que realizar uma configuração semelhante à feita no filebrowser, mas desta vez mapeando a pasta `/mnt/hd_externo/Videos` para a pasta `/media/hd/Videos` dentro do contêiner do Jellyfin, veja como ficou o `docker-compose.yml`:
 
 ```yaml
 jellyfin:
