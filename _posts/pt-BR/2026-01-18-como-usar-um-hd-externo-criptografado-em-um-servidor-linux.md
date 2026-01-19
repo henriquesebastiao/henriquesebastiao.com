@@ -7,7 +7,7 @@ categories: [Linux, Docker]
 tags: [linux, cli, docker, docker-compose, self-host]
 post_image:
   path: img/2026-01-18-post_image.jpg
-  alt: HD externo Seagate Foto de <a href="https://unsplash.com/pt-br/@uwukuriemery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Uwukuri Emery</a> na <a href="https://unsplash.com/pt-br/fotografias/um-close-up-de-um-porta-cartao-preto-em-uma-superficie-de-madeira-se1G--2c6JU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  alt: HD externo Seagate Foto de <a href="https://unsplash.com/pt-br/@uwukuriemery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Uwukuri Emery</a> no <a href="https://unsplash.com/pt-br/fotografias/um-close-up-de-um-porta-cartao-preto-em-uma-superficie-de-madeira-se1G--2c6JU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 ---
 
 Há algum tempo comprei minicomputador da Lenovo, um ThinkCentre, para usá-lo como meu servidor pessoal como uma espécie de *homelab*, mas meio que acabo usando ele em “produção” hoje em dia, seja para hospedar meus projetos pessoais, ou ferramentas *self-hosted* que utilizo. De qualquer forma este servidor em si e o que rodo nele são assunto para outro post.
