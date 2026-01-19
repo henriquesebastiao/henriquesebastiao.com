@@ -20,7 +20,7 @@ const tools = [
     { icon: 'sqlalchemy', isClickable: false },
 
     // Host, deployment and CI/CD
-    { icon: 'docker', isClickable: false },
+    { icon: 'docker' },
     { icon: 'podman', isClickable: false },
     { icon: 'kubernetes', isClickable: false },
     { icon: 'amazonwebservices', hint: 'AWS', isClickable: false },
@@ -50,7 +50,7 @@ const tools = [
 
     // Others
     { icon: 'powershell', isClickable: false },
-    { icon: 'linux', isClickable: false },
+    { icon: 'linux' },
     { icon: 'archlinux', isClickable: false },
     { icon: 'bash', isClickable: false },
     { icon: 'raspberrypi', hint: 'Raspberry Pi', isClickable: false },
