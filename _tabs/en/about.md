@@ -47,6 +47,12 @@ I occasionally write posts about development, networking, and technology in gene
 - **Zabbix** - for application observability via SNMP protocol, widely used by ISPs[^isp].
 - **MikroTik** - Mikrotik routers and servers with RouterOS.
 
+### GPG public key
+
+If you want to send me encrypted messages or verify files signed by me, use my [GPG public key](/assets/gpg/public-key.txt){:target="_blank"}.
+
+Fingerprint: `9FB4 E2C4 4F1F 5904 9C24  116C 6F5C 3CD7 0297 6E14`
+
 <hr class="about">
 
 <div id="tools"></div>
