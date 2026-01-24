@@ -7,6 +7,7 @@ const tools = [
     { icon: 'streamlit', isClickable: false },
     { icon: 'cplusplus', tag: 'c', hint: 'C++', isClickable: false },
     { icon: 'c', tag: 'c', hint: 'C', isClickable: false },
+    { icon: 'go', tag: 'go', hint: 'Go', isClickable: false },
     { icon: 'javascript', hint: 'JavaScript', isClickable: false },
     { icon: 'typescript', hint: 'TypeScript', isClickable: false },
     { icon: 'html5', tag: 'html', hint: 'HTML', isClickable: false },
@@ -52,9 +53,12 @@ const tools = [
     { icon: 'powershell', isClickable: false },
     { icon: 'linux' },
     { icon: 'archlinux', isClickable: false },
+    { icon: 'ubuntu', isClickable: false },
     { icon: 'bash', isClickable: false },
-    { icon: 'raspberrypi', hint: 'Raspberry Pi', isClickable: false },
+    { icon: 'grafana', isClickable: false },
+    { icon: 'prometheus', isClickable: false },
     { icon: 'opentelemetry', hint: 'OpenTelemetry', isClickable: false },
+    { icon: 'raspberrypi', hint: 'Raspberry Pi', isClickable: false },
     { icon: 'tex', tag: 'latex', isClickable: false },
 ];
 
