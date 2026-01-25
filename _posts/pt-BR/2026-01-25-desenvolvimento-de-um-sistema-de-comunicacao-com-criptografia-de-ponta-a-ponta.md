@@ -4,7 +4,7 @@ description: Trabalho de Curso para obtenção do título de graduação em Ciê
 author: henriquesebastiao
 date: 2026-01-25 10:24:00 -0400
 categories: [Development, Cryptography]
-tags: [security, python, tex, privacy, fastapi, cryptography, typer, qt]
+tags: [security, python, latex, privacy, fastapi, cryptography, typer, qt, cli]
 mermaid: true
 ---
 

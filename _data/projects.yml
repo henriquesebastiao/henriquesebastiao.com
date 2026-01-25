@@ -1,10 +1,11 @@
-- title: LifeSync
-  tags: [python, fastapi, sqlalchemy, postgres, docker]
-  github: /lifesync/
+- title: Confy
+  tags: [python, fastapi, cryptography, docker, pytest, pyside, typer]
+  github: /confy/
+  deploy: https://confy.henriquesebastiao.com/
   description: >-
-      Centralizando as informações importantes da vida em um único lugar.
+    Sistema de mensagens criptografado end-to-end e auto-hospedado.
   description_en: >-
-     Centralizing life's important information in one place.
+     End-to-end encrypted, self-hosted messaging system.
 
 - title: Dotum
   tags: [python, fastapi, sqlalchemy, streamlit, postgres, docker, pytest]

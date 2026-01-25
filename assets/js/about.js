@@ -1,8 +1,8 @@
 // Icons provided by https://devicon.dev/
 const tools = [
     // Languages, frameworks and tools
-    { icon: 'python', isClickable: false },
-    { icon: 'fastapi', isClickable: false },
+    { icon: 'python', isClickable: true },
+    { icon: 'fastapi', isClickable: true },
     { icon: 'django', isClickable: false },
     { icon: 'streamlit', isClickable: false },
     { icon: 'cplusplus', tag: 'c', hint: 'C++', isClickable: false },
@@ -19,6 +19,7 @@ const tools = [
     { icon: 'pypi', isClickable: false },
     { icon: 'pytest', hint: 'PyTest', isClickable: false },
     { icon: 'sqlalchemy', isClickable: false },
+    { icon: 'qt', isClickable: true },
 
     // Host, deployment and CI/CD
     { icon: 'docker' },
@@ -51,7 +52,7 @@ const tools = [
 
     // Others
     { icon: 'powershell', isClickable: false },
-    { icon: 'linux' },
+    { icon: 'linux', isClickable: true },
     { icon: 'archlinux', isClickable: false },
     { icon: 'ubuntu', isClickable: false },
     { icon: 'bash', isClickable: false },
@@ -59,7 +60,7 @@ const tools = [
     { icon: 'prometheus', isClickable: false },
     { icon: 'opentelemetry', hint: 'OpenTelemetry', isClickable: false },
     { icon: 'raspberrypi', hint: 'Raspberry Pi', isClickable: false },
-    { icon: 'tex', tag: 'latex', isClickable: false },
+    { icon: 'tex', tag: 'latex', isClickable: true },
 ];
 
 const container = document.getElementById('tools');
