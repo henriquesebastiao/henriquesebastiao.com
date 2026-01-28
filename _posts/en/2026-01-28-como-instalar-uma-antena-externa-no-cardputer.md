@@ -132,24 +132,24 @@ Below are all the other images that can help you better understand the process:
 
 <table>
   <tr>
-    <td><img src="/img/2026-01-28/img2.jpg" width="300"/></td>
-    <td><img src="/img/2026-01-28/img3.jpg" width="300"/></td>
-    <td><img src="/img/2026-01-28/img4.jpg" width="300"/></td>
+    <td><img src="/img/2026-01-28/img2.jpg" width="300" alt="img"/></td>
+    <td><img src="/img/2026-01-28/img3.jpg" width="300" alt="img"/></td>
+    <td><img src="/img/2026-01-28/img4.jpg" width="300" alt="img"/></td>
   </tr>
   <tr>
-    <td><img src="/img/2026-01-28/img5.jpg" width="300"/></td>
-    <td><img src="/img/2026-01-28/img6.jpg" width="300"/></td>
-    <td><img src="/img/2026-01-28/img7.jpg" width="300"/></td>
+    <td><img src="/img/2026-01-28/img5.jpg" width="300" alt="img"/></td>
+    <td><img src="/img/2026-01-28/img6.jpg" width="300" alt="img"/></td>
+    <td><img src="/img/2026-01-28/img7.jpg" width="300" alt="img"/></td>
   </tr>
   <tr>
-    <td><img src="/img/2026-01-28/img8.jpg" width="300"/></td>
-    <td><img src="/img/2026-01-28/img1.jpg" width="300"/></td>
-    <td><img src="/img/2026-01-28/img10.jpg" width="300"/></td>
+    <td><img src="/img/2026-01-28/img8.jpg" width="300" alt="img"/></td>
+    <td><img src="/img/2026-01-28/img1.jpg" width="300" alt="img"/></td>
+    <td><img src="/img/2026-01-28/img10.jpg" width="300" alt="img"/></td>
   </tr>
   <tr>
-    <td><img src="/img/2026-01-28/img11.jpg" width="300"/></td>
-    <td><img src="/img/2026-01-28/img12.jpg" width="300"/></td>
-    <td><img src="/img/2026-01-28/img13.jpg" width="300"/></td>
+    <td><img src="/img/2026-01-28/img11.jpg" width="300" alt="img"/></td>
+    <td><img src="/img/2026-01-28/img12.jpg" width="300" alt="img"/></td>
+    <td><img src="/img/2026-01-28/img13.jpg" width="300" alt="img"/></td>
   </tr>
 </table>
 
@@ -160,4 +160,4 @@ An experience I, [@henriquesebastiao](/en/about/), had:
 - During the process of reassembling the Cardputer, I almost gave up; it just wasn’t working!
 - And while I was finding space for the SMA plug, I opted to use nothing less than a drill to make a hole in the Cardputer case. Too bad I didn't record it.
 
-<img src="/img/2026-01-28/cool.jpg" width="500"/>
+<img src="/img/2026-01-28/cool.jpg" alt="img" width="500"/>

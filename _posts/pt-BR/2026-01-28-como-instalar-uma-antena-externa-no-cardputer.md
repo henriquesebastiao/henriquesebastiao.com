@@ -131,24 +131,24 @@ Segue abaixo todas as demais imagens que podem lhe ajudar a entender melhor o pr
 
 <table>
   <tr>
-    <td><img src="/img/2026-01-28/img2.jpg" width="300"/></td>
-    <td><img src="/img/2026-01-28/img3.jpg" width="300"/></td>
-    <td><img src="/img/2026-01-28/img4.jpg" width="300"/></td>
+    <td><img src="/img/2026-01-28/img2.jpg" width="300" alt="img"/></td>
+    <td><img src="/img/2026-01-28/img3.jpg" width="300" alt="img"/></td>
+    <td><img src="/img/2026-01-28/img4.jpg" width="300" alt="img"/></td>
   </tr>
   <tr>
-    <td><img src="/img/2026-01-28/img5.jpg" width="300"/></td>
-    <td><img src="/img/2026-01-28/img6.jpg" width="300"/></td>
-    <td><img src="/img/2026-01-28/img7.jpg" width="300"/></td>
+    <td><img src="/img/2026-01-28/img5.jpg" width="300" alt="img"/></td>
+    <td><img src="/img/2026-01-28/img6.jpg" width="300" alt="img"/></td>
+    <td><img src="/img/2026-01-28/img7.jpg" width="300" alt="img"/></td>
   </tr>
   <tr>
-    <td><img src="/img/2026-01-28/img8.jpg" width="300"/></td>
-    <td><img src="/img/2026-01-28/img1.jpg" width="300"/></td>
-    <td><img src="/img/2026-01-28/img10.jpg" width="300"/></td>
+    <td><img src="/img/2026-01-28/img8.jpg" width="300" alt="img"/></td>
+    <td><img src="/img/2026-01-28/img1.jpg" width="300" alt="img"/></td>
+    <td><img src="/img/2026-01-28/img10.jpg" width="300" alt="img"/></td>
   </tr>
   <tr>
-    <td><img src="/img/2026-01-28/img11.jpg" width="300"/></td>
-    <td><img src="/img/2026-01-28/img12.jpg" width="300"/></td>
-    <td><img src="/img/2026-01-28/img13.jpg" width="300"/></td>
+    <td><img src="/img/2026-01-28/img11.jpg" width="300" alt="img"/></td>
+    <td><img src="/img/2026-01-28/img12.jpg" width="300" alt="img"/></td>
+    <td><img src="/img/2026-01-28/img13.jpg" width="300" alt="img"/></td>
   </tr>
 </table>
 
@@ -159,4 +159,4 @@ Experiencia que eu, [@henriquesebastiao](/about/) tive:
 - Durante o processo de montar o Cardputer de volta eu quase desisti, o trem que não dava certo!
 - E enquanto eu acho um espaço para caber o plug SMA eu optei por usar nada mais nada menos que uma furadeira para fazer um buraco na carcaça do Cardputer, pena que nao registrei isso.
 
-<img src="/img/2026-01-28/cool.jpg" width="500"/>
+<img src="/img/2026-01-28/cool.jpg" alt="img" width="500"/>
