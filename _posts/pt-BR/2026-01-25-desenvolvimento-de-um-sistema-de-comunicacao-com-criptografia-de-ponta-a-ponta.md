@@ -109,14 +109,14 @@ Ao tratarmos de comunicação por meios digitais, transportando-a por intermédi
 
 No método de chave simétrica, tanto a criptografia dos dados quanto a descriptografia são feitas com base em uma única chave chamada de chave privada, também podendo ser chamada de chave secreta. Um canal seguro é necessário para compartilhar essa chave entre o remetente e o destinatário, de modo a garantir que nenhuma pessoa não autorizada possa obter a chave. A Figura ilustra o processo de criptografia simétrica.
 
-![Criptografia simétrica](/assets/img/2026-01-25-criptografia-simetrica.png){: width="486" }
+![Criptografia simétrica](/img/2026-01-25-criptografia-simetrica.png){: width="486" }
 _Processo de criptografia simétrica_
 
 #### Criptografia assimétrica
 
 Já na criptografia assimétrica duas chaves são necessárias: uma é a chave privada que deve ser mantida em segredo e a outra é a chave pública. A criptografia é realizada usando a chave pública, já a chave secreta é usada para descriptografar o conteúdo cifrado. Ambas as chaves são matematicamente relacionadas entre si. É importante ressaltar ainda, que não é possível descriptografar o texto com a chave pública, logo esta pode ser conhecida por pessoas terceiras. Mesmo que os sistemas assimétricos possibilitem um nível maior de segurança, eles podem não ser adequados para criptografar grandes volumes de dados, como ressalta [Alenezi, Alabdulrazzaq e Mohammad (2020)][alenezi]. Isso ocorre porque a velocidade é lenta em comparação com os sistemas baseados em chaves simétricas e eles também apresentam uma maior taxa de utilização da CPU. A Figura ilustra o processo de criptografia assimétrica.
 
-![Criptografia assimétrica](/assets/img/2026-01-25-criptografia-assimetrica.png){: width="486" }
+![Criptografia assimétrica](/img/2026-01-25-criptografia-assimetrica.png){: width="486" }
 _Processo de criptografia assimétrica_
 
 ### Camada 7 com confiabilidade
@@ -183,7 +183,7 @@ O protocolo possibilita a transmissão de mensagens contendo texto em codificaç
 
 O protocolo funciona estabelecendo inicialmente uma conexão entre cliente e servidor usando cabeçalho HTTP sobre um único socket TCP. Após estabelecida a conexão, o cabeçalho HTTP é substituído pelo cabeçalho Websocket, permitindo a troca simultânea de mensagens em ambas as direções através de uma conexão persistente e dedicada. Isso possibilita que o servidor envie mensagens ao cliente a qualquer momento. A confiabilidade da comunicação é assegurada por mecanismos próprios do protocolo. A Figura demonstra o processo de comunicação do protocolo Websocket.
 
-![Demonstração da comunicação com protocolo Websocket](/assets/img/2026-01-25-websocket.png){: width="486" }
+![Demonstração da comunicação com protocolo Websocket](/img/2026-01-25-websocket.png){: width="486" }
 _Demonstração da comunicação com protocolo Websocket_
 
 ### Python
@@ -232,14 +232,14 @@ O processo de conexão começa com o cliente, que gera um hash de ID exclusivo p
 
 Essa abordagem preserva a confidencialidade do cliente, já que o endereço IP não é exposto diretamente. O hash do ID se torna a chave de acesso, permitindo que o cliente se conecte ao destino de forma controlada e segura.
 
-![Comunicacao Etapa 1](/assets/img/2026-01-25-arquitetura-etapa1.png){: width="486" }
+![Comunicacao Etapa 1](/img/2026-01-25-arquitetura-etapa1.png){: width="486" }
 _O cliente solicita ao servidor que o conecte com o usuário de destino e estabeleça a comunicação inicial para troca de mensagens_
 
 Uma vez estabelecida a conexão, todas as mensagens transitam exclusivamente pelo servidor. É importante ressaltar que toda a comunicação é criptografada, garantindo que os dados não sejam armazenados durante a transferência. O servidor atua como um transportador ágil e seguro, encaminhando as informações diretamente para o destinatário.
 
 Ao final da sessão, a aplicação informa ao servidor sobre o encerramento da comunicação. Os dados do usuário, incluindo o hash do ID, são mantidos no banco de dados Redis enquanto o cliente estiver ativo. Eles são excluídos apenas quando o usuário se desconecta, garantindo a limpeza e a segurança dos dados.
 
-![Comunicacao Etapa 2](/assets/img/2026-01-25-arquitetura-etapa2.png){: width="486" }
+![Comunicacao Etapa 2](/img/2026-01-25-arquitetura-etapa2.png){: width="486" }
 _O primeiro usuário que desconectar é fechada a conexão do lado que sai, e o servidor limpa seus dados salvos temporariamente_
 
 ### Prototipagem da Interface Gráfica
@@ -248,7 +248,7 @@ Como parte do processo metodológico, esta fase foi construída com o intuito de
 
 A prototipagem contribui diretamente para a identificação de melhorias na experiência do usuário, da comunicação entre os integrantes da equipe e como ferramenta de análise das necessidades práticas do projeto. A partir dessa ambientação visual, foi possível ajustar funcionalidades e alinhar as decisões de design às metas de confiabilidade e usabilidade do sistema. Este levantamento está paralelo com os princípios da metodologia ágil, ao unir interações rápidas e feedback contínuo, promovendo um processo de desenvolvimento centrado no usuário e tecnicamente fundamentado.
 
-![Prototipo](/assets/img/2026-01-25-prototipo.png){: width="550" }
+![Prototipo](/img/2026-01-25-prototipo.png){: width="550" }
 _Protótipo inicial de baixa fidelidade da aplicação_
 
 ### Especificação de Requisitos
@@ -301,7 +301,7 @@ Para manter um ambiente organizado entre todos os participantes do projeto e gar
 
 Do Scrum, usaremos funções, organização de backlogs, revisões regulares e perspectivas. Já do Kanban, usaremos o quadro visual, conforme ilustrado abaixo, um sistema de tarefas baseado em pulls e fluxo de código contínuo.
 
-![Scrumban](/assets/img/2026-01-25-scrumban.png){: width="400" }
+![Scrumban](/img/2026-01-25-scrumban.png){: width="400" }
 _Representação de um quadro de desenvolvimento com o *framework* Scrumban_
 
 O quadro é dividido em colunas que podem ser adaptadas às nossas necessidades. Mas normalmente são utilizadas três:
@@ -312,7 +312,7 @@ O quadro é dividido em colunas que podem ser adaptadas às nossas necessidades.
 
 A seguir, apresenta-se uma demonstração do quadro de atividades do projeto, gerenciado por meio da plataforma [GitHub Projects](https://encurtador.com.br/A6PVc). Essa ferramenta foi selecionada por sua capacidade de integração com issues e pull requests, o que permite acompanhar o andamento das tarefas de maneira estruturada e eficiente, contribuindo significativamente para o planejamento e a organização das atividades do grupo ao longo do desenvolvimento do projeto.
 
-![Scrumban](/assets/img/2026-01-25-github-project.png){: width="700" }
+![Scrumban](/img/2026-01-25-github-project.png){: width="700" }
 _Quadro de atividades do projeto no Github Projects_
 
 A adoção do Scrumban neste projeto visa equilibrar a disciplina e organização oferecidas pelo Scrum com a flexibilidade e fluidez do Kanban, proporcionando um ambiente de desenvolvimento mais adaptável e visualmente claro. Essa abordagem facilita a priorização e o acompanhamento das tarefas, promove a entrega contínua de funcionalidades e permite rápidas adaptações às mudanças de escopo, o que é especialmente útil em projetos acadêmicos com tempo limitado e objetivos bem definidos. Com o uso combinado dessas práticas ágeis, espera-se uma melhor gestão do fluxo de trabalho, maior transparência nas etapas de desenvolvimento e um aumento na eficiência da equipe durante toda a execução do projeto.
@@ -382,7 +382,7 @@ Um dos recursos mais valiosos para a gestão ágil do projeto foi o gráfico de 
 
 Abaixo é possível visualizar o gráfico de Burn Up do projeto, que ilustra a evolução das entregas e o cumprimento dos marcos estabelecidos durante o desenvolvimento da aplicação de comunicação segura: 
 
-![Burn Up](/assets/img/2026-01-25-burn-up.png){: width="700" }
+![Burn Up](/img/2026-01-25-burn-up.png){: width="700" }
 _Gráfico de Burn Up do projeto, ilustrando a evolução das entregas e o cumprimento dos marcos estabelecidos_
 
 O gráfico evidencia os períodos de maior intensidade no desenvolvimento, particularmente durante a implementação dos módulos de segurança e a transição entre as tecnologias de interface gráfica. As variações na curva refletem tanto as adaptações metodológicas necessárias quanto os desafios técnicos específicos encontrados no desenvolvimento de um sistema de comunicação com criptografia de ponta a ponta.
@@ -413,7 +413,7 @@ O back-end é responsável por aceitar as conexões Websocket vindas dos cliente
 
 O back-end foi desenvolvido totalmente em Python utilizando o FastAPI (framework que auxilia no desenvolvimento de APIs web), o qual, ao ser executado, fornece uma API acessível através de uma URL específica para aplicativos clientes acessarem suas funcionalidades. A estrutura do projeto do servidor ficou da seguinte forma:
 
-![Estrutura](/assets/img/2026-01-25-estrutura-projeto-servidor.png){: width="400" }
+![Estrutura](/img/2026-01-25-estrutura-projeto-servidor.png){: width="400" }
 _Estrutura do projeto ao fim da (numero) sprint_
 
 Outro ponto importante é que neste momento já foram adicionadas algumas dependências ao projeto que facilitaram o desenvolvimento, entre elas, é válido destacar as seguintes:
@@ -493,21 +493,21 @@ Para organizar e processar adequadamente os diferentes tipos de mensagens trafeg
 
 O cliente CLI permitiu a realização de testes abrangentes que validaram aspectos críticos do sistema, incluindo a capacidade do servidor de gerenciar múltiplas conexões simultâneas, o funcionamento correto dos algoritmos de criptografia RSA e AES, a robustez do sistema em cenários de falha de rede e desconexões abruptas, além do comportamento adequado com múltiplos usuários enviando mensagens simultaneamente. Esses testes foram fundamentais para identificar e corrigir problemas relacionados ao gerenciamento de estado assíncrono, tratamento de exceções e sincronização entre processos, garantindo que o protocolo desenvolvido fosse robusto o suficiente para suportar a implementação na interface gráfica do aplicativo final.
 
-![Cliente CLI](/assets/img/2026-01-25-cli-chat.png){: width="400" }
+![Cliente CLI](/img/2026-01-25-cli-chat.png){: width="400" }
 _Cliente CLI em execução, ilustrando a interação do usuário com o sistema de mensagens_
 
 A validação da criptografia das mensagens e do intercâmbio de chaves no início da conexão foi realizada com o auxílio do [Wireshark](https://www.wireshark.org/), um software amplamente reconhecido para análise de tráfego de rede. Essa ferramenta nos permitiu visualizar a formação dos pacotes de rede, baseando-se nas camadas do [modelo OSI](https://en.wikipedia.org/wiki/OSI_model). Assim, conseguimos confirmar a troca inicial das chaves públicas RSA e a chave AES entre os *hosts* até o momento completo da troca de mensagens estarem criptografadas, conforme demonstrado na imagem.
 
-![Wireshark 1](/assets/img/2026-01-25-wireshark1.png){: width="700" }
+![Wireshark 1](/img/2026-01-25-wireshark1.png){: width="700" }
 _Captura de tela do Wireshark durante o estabelecimento inicial da conexão entre os *peers*, conforme texto do campo *Payload*_
 
-![Wireshark 2](/assets/img/2026-01-25-wireshark2.png){: width="700" }
+![Wireshark 2](/img/2026-01-25-wireshark2.png){: width="700" }
 _Captura de tela do Wireshark durante a troca de chaves públicas RSA sendo realizada entre os *peers*_
 
-![Wireshark 3](/assets/img/2026-01-25-wireshark3.png){: width="700" }
+![Wireshark 3](/img/2026-01-25-wireshark3.png){: width="700" }
 _Captura de tela do Wireshark mostrando a troca da chave AES entre os *peers*_
 
-![Wireshark 4](/assets/img/2026-01-25-wireshark4.png){: width="700" }
+![Wireshark 4](/img/2026-01-25-wireshark4.png){: width="700" }
 _Mensagens já sendo transmitidas encriptadas com criptografia AES entre os dois hosts, a partir daqui ambos contém a chave para descriptografar a comunicação_
 
 O processo de troca dos prefixos é visualizado no payload do frame de dados. Isso ocorre porque o protocolo Websocket utiliza o opcode Text para indicar que o conteúdo do frame é uma mensagem de texto, permitindo a transmissão de dados como as nossas troca de prefixos configuradas previamente. Além disso, é possível observar os frames de controle [PING e PONG](https://www.turfemon.com/websocket-ping-pong), que são nativos do protocolo e têm a função de verificar a atividade e a disponibilidade dos *hosts*, garantindo que a conexão permaneça estável.
@@ -518,7 +518,7 @@ Para prover uma interface amigável e de simples utilização para os usuários 
 
 O aplicativo integra múltiplas funcionalidades essenciais para um sistema de comunicação segura, incluindo o gerenciamento de chaves criptográficas RSA, estabelecimento e manutenção de conexões Websocket com o servidor, criptografia e descriptografia de mensagens em tempo real, e uma interface de chat intuitiva que oculta a complexidade dos processos de segurança subjacentes. A estrutura do projeto do APP ficou da seguinte forma: 
 
-![Estrutura APP](/assets/img/2026-01-25-estrutura-projeto-app.png){: width="250" }
+![Estrutura APP](/img/2026-01-25-estrutura-projeto-app.png){: width="250" }
 _Estrutura do projeto do app_
 
 A experiência do usuário foi priorizada desde o início do desenvolvimento, com foco na simplicidade de uso e na transparência dos processos de segurança. O aplicativo apresenta uma interface limpa e organizada, onde os usuários podem facilmente iniciar conversas, visualizar o status de suas conexões e receber feedback visual sobre o estado da criptografia de suas mensagens, tudo isso sem precisar compreender os aspectos técnicos da implementação RSA ou dos protocolos de comunicação utilizados.
@@ -529,19 +529,19 @@ O PySide6 provê um conjunto de elementos de UI que auxiliam no desenvolvimentos
 
 A primeira tela solicita o nome de usuário que se deseja utilizar, e o endereço do servidor que será usado para a comunicação. Vale ressaltar que o remetente e o destinatário devem utilizar o mesmo servidor para estabelecer uma conexão, caso ambos os usuários se conectem a servidores distintos entre si estes não conseguiram se comunicar.
 
-![Tela APP](/assets/img/2026-01-25-app-screen1.png){: width="400" }
+![Tela APP](/img/2026-01-25-app-screen1.png){: width="400" }
 _Tela de login do APP, onde o usuário insere seu nome de usuário e o endereço do servidor que será utilizado para a comunicação_
 
 O endereço de servidor fornecido na primeira tela deve conter o protocolo, se é HTTP ou HTTPS, o domínio do servidor e a porta em que está sendo executado, um endereço de exemplo poderia ser `https://meuservidor.com:9000`, onde `https` é o protocolo, `meuservidor.com` o domínio do servidor e `9000` a porta em que ele está sendo executado. Por fim, caso o nome de usuário inserido já esteja ou o endereço do servidor não esteja acessível ou até mesmo caso os campos sejam deixados em branco, uma janela informando o erro será exibida.
 
 Após clicar em conectar na primeira tela do APP, o usuário será encaminhado para a segunda tela, em que será solicitado que seja inserido o nome de usuário do destinatário, ou seja, o nome de usuário da pessoa com a qual se deseja conversar.
 
-![Tela APP](/assets/img/2026-01-25-app-screen2.png){: width="400" }
+![Tela APP](/img/2026-01-25-app-screen2.png){: width="400" }
 _Tela de destinatário do APP, onde o usuário insere o nome de usuário da pessoa com a qual se deseja comunicar_
 
 Por fim, ao clicar novamente em conectar o usuário será conectado ao usuário de destino e a comunicação poderá ser iniciada, caso o usuário de destino ainda não esteja conectado, o primeiro usuário deverá aguardar e quando o destinatário será conectado o primeiro usuário será notificado. Assim que os dois usuários estiverem devidamente conectados eles podem dar sequência a conversa como demonstrado na imagem abaixo:
 
-![Tela APP](/assets/img/2026-01-25-app-screen3.png){: width="500" }
+![Tela APP](/img/2026-01-25-app-screen3.png){: width="500" }
 _Tela de conversação do APP, onde o usuário pode enviar e receber mensagens de texto em tempo real_
 
 O protocolo de comunicação e criptografia implementado no aplicativo de interface gráfica mantém exatamente a mesma arquitetura e procedimentos validados anteriormente no cliente CLI. Todo o fluxo de estabelecimento de conexão Websocket, handshake de chaves públicas RSA, geração e troca segura de chaves AES, além do sistema de prefixos para classificação de mensagens, foi integralmente preservado na implementação do aplicativo desktop. Esta consistência arquitetural garantiu que a robustez e segurança comprovadas durante os testes com o cliente CLI fossem mantidas na versão final do produto, proporcionando aos usuários finais o mesmo nível de proteção criptográfica em uma interface amigável e intuitiva. A reutilização deste protocolo também permitiu que o foco do desenvolvimento da interface gráfica fosse direcionado exclusivamente para a experiência do usuário e funcionalidades visuais, uma vez que os aspectos críticos de segurança já haviam sido extensivamente testados e validados.
@@ -554,7 +554,7 @@ A integração e entrega contínua (CI/CD) representa uma das práticas fundamen
 
 No projeto do aplicativo desktop oi implementado um pipeline de CI/CD que é acionado sempre que uma nova versão do app for lançada e enviada para o [GitHub](https://github.com/home), esse pipeline automatiza o processo de build e empacotamento de uma nova versão do app para instaladores nativos para os sistemas operacionais Microsoft Windows e as principais distribuições Linux, entre elas, Ubuntu, Fedora, Arch Linux, entre outras. Após o empacotamento os binários instaladores são anexados à publicação de lançamento da versão no GitHub para que os usuários possam realizar o download dos mesmos. Na imagem abaixo é possível visualizar o status e tempo de execução de cada CI de build dos instaladores via GitHub Actions, incluindo o total de empacotamento de todos os instaladores:
 
-![CI Build](/assets/img/2026-01-25-ci-build.png){: width="400" }
+![CI Build](/img/2026-01-25-ci-build.png){: width="400" }
 _Status do pipeline de CI/CD via GitHub Actions_
 
 Nos apêndices no final deste arquivo é possível ver o código que define o workflow de build em "”.
