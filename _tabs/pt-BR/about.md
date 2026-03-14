@@ -15,7 +15,7 @@ image: img/about-preview-image.png
 ### Introdução
 
 Moro numa cidadezinha do interior de Mato Grosso, Brasil.
-Sou desenvolvedor *back-end* com foco em [Python](https://www.python.org/){:target="_blank"}, com 2 anos de experiência e graduando em Ciência da Computação.
+Sou desenvolvedor *back-end* com foco em [Python](https://www.python.org/){:target="_blank"}, com mais de 3 anos de experiência e bacharel em Ciência da Computação.
 Usando ferramentas e frameworks como [FastAPI](https://fastapi.tiangolo.com/){:target="_blank"} e [Django](https://www.djangoproject.com/){:target="_blank"},
 PyTest, Docker, GIT, bancos de dados SQL, etc. Sempre procuro desenvolver aplicações robustas para solucionar os problemas das pessoas ao meu redor.
 Ademais, tenho entre três e quatro anos de experiência com redes de computadores e sistemas Linux no meu dia a dia acadêmico e profissional.

@@ -15,8 +15,6 @@ This project is a solution to a back-end programming challenge, the objective of
 
 The web client was developed with [Streamlit](https://streamlit.io/){:target="_blank"}, while the back-end server was made using [FastAPI](https://fastapi.tiangolo.com/){:target="_blank"} and [SQLAlchemy](https://www.sqlalchemy.org/){:target="_blank"} for database management.
 
-Deploy link (Web Client): [https://dotum-web.henriquesebastiao.com](https://dotum-web.henriquesebastiao.com/){:target="_blank"}
-
 Demo video:
 
 {% include embed/youtube.html id='uQxHBROBUQU' %}
@@ -41,8 +39,6 @@ Demo video:
 ## [Poupy](/poupy/){:target="_blank"} - Personal expense management
 
 Poupy is a web application for managing personal budgets and expenses, developed with Django. It allows complete financial control, including the management of bank accounts, income, expenses and balance transfers between accounts. With an intuitive dashboard, the user can quickly view a monthly financial summary and keep their finances organized.
-
-Deployment link: [https://poupy.henriquesebastiao.com](https://poupy.henriquesebastiao.com/app/login){:target="_blank"}
 
 Demo video:
 
@@ -81,31 +77,6 @@ The firmware was developed using the C language with the Arduino platform, based
 Video presenting the firmware:
 
 {% include embed/youtube.html id='sE6ImWABvBE' %}
-
-## [Manejo](/manejo/){:target="_blank"} - Cattle management modernization project
-
-> This project is still in the development phase.
-{: .prompt-info }
-
-The management modernization project aims to provide a robust and efficient system for monitoring cattle management, enabling production and expense control, as well as assisting decision-making through herd performance analysis.
-
-To date, the system has an async API developed with FastAPI, responsible for managing information related to animals, health events, weights, operational costs, and other data relevant to production. Data persistence is achieved through a PostgreSQL database, with schema versioning using Alembic.
-
-The API follows best RESTful practices, with validations implemented using Pydantic, authentication based on JWT tokens, and automated testing with Pytest to ensure system reliability.
-
-Furthermore, the project aims to incorporate:
-
-- An administrative dashboard with interactive visualizations and reports;
-
-- Integration with IoT devices for automated field data collection;
-
-- Predictive analytics based on historical data;
-
-- Intelligent notifications for critical management events.
-
-The ultimate goal is to offer a modern, easy-to-use tool that can be adapted to different producer profiles, promoting digitalization and efficiency in beef and dairy farming.
-
-API Preview Link: [https://manejo.henriquesebastiao.com/](https://manejo.henriquesebastiao.com/){:target="_blank"}
 
 ## [Timesheet](/timesheet/){:target="_blank"} - Time sheet
 

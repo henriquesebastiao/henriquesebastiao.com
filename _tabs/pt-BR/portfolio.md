@@ -15,8 +15,6 @@ Este projeto é uma solução para um desafio de programação back-end, cujo ob
 
 O cliente web foi desenvolvido com [Streamlit](https://streamlit.io/){:target="_blank"}, enquanto o servidor back-end foi feito utilizando [FastAPI](https://fastapi.tiangolo.com/){:target="_blank"} e [SQLAlchemy](https://www.sqlalchemy.org/){:target="_blank"} para gestão do banco de dados.
 
-Link do deploy (Cliente Web): [https://dotum-web.henriquesebastiao.com](https://dotum-web.henriquesebastiao.com/){:target="_blank"}
-
 Vídeo de demonstração:
 
 {% include embed/youtube.html id='uQxHBROBUQU' %}
@@ -41,8 +39,6 @@ Vídeo de demonstração:
 ## [Poupy](/poupy/){:target="_blank"} - Gestão de gastos pessoais
 
 Poupy é um aplicativo web para gerenciamento de orçamento e gastos pessoais, desenvolvido com Django. Ele permite o controle financeiro completo, incluindo a gestão de contas bancárias, receitas, despesas e transferências de saldo entre contas. Com um dashboard intuitivo, o usuário pode visualizar rapidamente um resumo financeiro mensal e manter suas finanças organizadas.
-
-Link do deploy: [https://poupy.henriquesebastiao.com](https://poupy.henriquesebastiao.com/app/login){:target="_blank"}
 
 Vídeo de demonstração:
 
@@ -81,31 +77,6 @@ O firmware foi desenvolvido usando a linguagem C com a plataforma Arduino, usand
 Vídeo apresentando o firmware:
 
 {% include embed/youtube.html id='sE6ImWABvBE' %}
-
-## [Manejo](/manejo/){:target="_blank"} - Projeto de modernização do manejo
-
-> Este projeto ainda está em fase de desenvolvimento.
-{: .prompt-info }
-
-O projeto de modernização do manejo visa proporcionar um sistema robusto e eficiente para o acompanhamento do manejo de bovinos, possibilitando o controle de produção e gastos, assim como auxiliar na tomada de decisões por meio da análise de performance do rebanho.
-
-Até o momento o sistema conta com uma API async desenvolvida com FastAPI, responsável por gerenciar informações relacionadas aos animais, eventos sanitários, pesos, custos operacionais e demais dados relevantes à produção. A persistência dos dados é feita por meio de um banco de dados PostgreSQL, com versionamento de esquema utilizando Alembic.
-
-A API segue boas práticas RESTful, com validações implementadas usando Pydantic, autenticação baseada em tokens JWT e testes automatizados com Pytest para garantir a confiabilidade do sistema.
-
-Além disso, o projeto visa incorporar futuramente:
-
-- Um painel administrativo com visualizações e relatórios interativos;
-
-- Integração com dispositivos IoT para coleta automatizada de dados em campo;
-
-- Análises preditivas com base em dados históricos;
-
-- Notificações inteligentes para eventos críticos no manejo.
-
-O objetivo final é oferecer uma ferramenta moderna, de fácil uso e adaptável a diferentes perfis de produtores, promovendo a digitalização e a eficiência na pecuária de corte e leite.
-
-Link de pré-visualização da API: [https://manejo.henriquesebastiao.com/](https://manejo.henriquesebastiao.com/){:target="_blank"}
 
 ## [Timesheet](/timesheet/){:target="_blank"} - Folha de ponto
 

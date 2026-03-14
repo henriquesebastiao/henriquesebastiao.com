@@ -1,3 +1,12 @@
+- title: Vagas Dev
+  tags: [python, fastapi, docker, pytest, beautifulsoup4, sqlalchemy]
+  github: /vagas-dev/
+  deploy: https://vagas.henriquesebastiao.com/
+  description: >-
+    Sistema de busca de vagas de emprego para desenvolvedores e notificações de novas vagas.
+  description_en: >-
+    Job search system for developers and notifications of new job openings.
+
 - title: Confy
   tags: [python, fastapi, cryptography, docker, pytest, pyside, typer]
   github: /confy/
@@ -6,6 +15,15 @@
     Sistema de mensagens criptografado end-to-end e auto-hospedado.
   description_en: >-
      End-to-end encrypted, self-hosted messaging system.
+     
+- title: Downtify
+  tags: [python, fastapi, docker]
+  github: /downtify/
+  deploy: https://downtify.henriquesebastiao.com
+  description: >-
+     Aplicativo self-hosted para baixar músicas do Spotify.
+  description_en: >-
+     Self-hosted application to download music from Spotify.
 
 - title: Dotum
   tags: [python, fastapi, sqlalchemy, streamlit, postgres, docker, pytest]
@@ -33,15 +51,6 @@
   description_en: >-
      Redteam firmware for M5 Stack Cardputer with ESP32S3 Chip.
 
-- title: Downtify
-  tags: [python, fastapi, docker]
-  github: /downtify/
-  deploy: https://downtify.henriquesebastiao.com
-  description: >-
-     Aplicativo self-hosted para baixar músicas do Spotify.
-  description_en: >-
-     Self-hosted application to download music from Spotify.
-
 - title: Modernização do Manejo API
   tags: [python, fastapi, sqlalchemy, postgres, docker, opentelemetry, pytest]
   github: /manejo/
@@ -50,14 +59,6 @@
      API assíncrona com observabilidade para gerenciamento de rebanho bovino criada com FastAPI.
   description_en: >-
      Asynchronous API with observability for cattle herd management built with FastAPI.
-
-- title: Skyport
-  tags: [python, pytest]
-  github: /skyport/
-  description: >-
-     Uma interface para consumir APIs de agências espaciais programaticamente.
-  description_en: >-
-     An interface for consuming space agency APIs programmatically.
 
 - title: Netmikro
   tags: [python, netmiko, pydantic, pytest]
